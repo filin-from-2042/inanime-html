@@ -1,0 +1,42 @@
+.ia-btn{
+	border-radius: 7px;
+	color: #fff;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:10px;
+}
+.yellow-btn{
+	background-color:rgb(245,173,91);
+}
+.blue-btn{
+	background-color:rgb(99,186,196);
+	padding:6px 30px;
+}
+/* Mobile */
+@media (max-width: 768px) {
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width:992px) { 
+	.ia-btn{
+		padding:3px 5px;
+	}
+	.yellow-btn{
+		padding:3px 14px;
+	}
+ }
+/* (desktops, 992px and up) */
+@media (min-width: 992px)  { 
+	.ia-btn{
+		padding:6px 38px;
+	}
+	.blue-btn{
+		padding:6px 30px;
+	}
+ }
+ /* Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px){ 
+
+ }
