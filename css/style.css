@@ -125,7 +125,16 @@ header .cart-container{
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
 @media (max-width: 768px) {
-
+    header .logo-link{
+        width: 150px;
+    }
+    header .img-commerce,
+    header .img-favorite{
+        width: 14px;
+    }
+    header .image-btn{
+        padding: 11px 10px 12px;
+    }
 }
 
 /* Tablet */
