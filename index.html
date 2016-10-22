@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE>
-<hmtl>
+<html>
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Inanime</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,64 +18,80 @@
 	
 </head>
 <body>
+    <header>
+        <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7">
+                    <img src="images/logo.png" class="img-responsive" alt="Responsive image">
+                </div>
+                <!-- desktop -->
+                <div class="hidden-xs hidden-sm col-md-11 col-lg-11 container">
+                    <!-- contacts -->
+                  <div class="row">
+                    <div class="col-md-17 col-lg-17">
+                        <span class="contacts">(495) 832-93-29, (8442) 234-53-63</span>
+                    </div>
+                    <div class="col-md-7 col-lg-7">
+                        <a href="http://www.facebook.com" class="social-link facebook"></a>
+                        <a href="http://www.twitter.com" class="social-link twitter"></a>
+                        <a href="http://vimeo.com" class="social-link vimeo"></a>
+                    </div>
+                  </div>
+                  <!-- search -->
+                  <div class="row">
+                    <div class="col-md-8 col-lg-8">
+                        <button type="button" class="btn btn-default ia-btn text-btn yellow-btn">Город</button>
+                    </div>
+                    <div class="col-md-16 col-lg-16">
+                        <form action="/catalog/">
+                            <div class="input-container">
+                                <input type="text" name="q" value="" placeholder="Поиск по каталогу" class="form-control search-input"/>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+               </div>
+                <div class="hidden-xs hidden-sm col-md-6 col-lg-6 container">
+                    <div class="row">
+                        <button type="button" class="btn btn-default ia-btn text-btn yellow-btn">Регистрация</button>
+                        <button type="button" class="btn btn-default ia-btn text-btn blue-btn">Личный кабинет</button>
+                    </div>
+                    <div class="row">
+                        <div class="content-container cart-container">
+                            <a class="btn btn-default ia-btn yellow-btn image-btn" href="#" role="button"><span class="icon cart-icon"></span></a>
+                            <div class="text-container">
+                                <span>
+                                    <span>2 товара</span><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="yellow-text">5.130 &#8381;</span>
+                                </span>
+                            </div>
+                            <a class="btn btn-default ia-btn blue-btn image-btn" href="#" role="button"><span class="icon favorite-icon"></span></a>
+                        </div>
+                    </div>
+               </div>
+                <!-- tablet -->
+                <div class="container hidden-xs col-sm-16 hidden-md hidden-lg">
+                    <div class="row">
 
-<div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7">
-			<img src="images/logo.png" class="img-responsive" alt="Responsive image">
-		</div>
-		<!-- desktop -->
-        <div class="hidden-xs hidden-sm col-md-11 col-lg-11 container">
-			<!-- contacts -->
-          <div class="row">
-			<div class="col-md-16 col-lg-16">
-				phones
-			</div>
-			<div class="col-md-8 col-lg-8">
-				social			
-			</div>
-		  </div>
-		  <!-- search -->
-          <div class="row">	
-			<div class="col-md-8 col-lg-8">
-				<button type="button" class="btn btn-default ia-btn yellow-btn">Город</button>
-			</div>
-			<div class="col-md-16 col-lg-16">
-				ыуфкср			
-			</div>	  
-		  </div>
-       </div>	   
-        <div class="hidden-xs hidden-sm col-md-6 col-lg-6 conatiner">
-			<div class="row">			
-				<button type="button" class="btn btn-default ia-btn yellow-btn">Регистрация</button>
-				<button type="button" class="btn btn-default ia-btn blue-btn">Личный кабинет</button>
-			</div>
-			<div class="row">
-			</div>
-       </div>
-		<!-- tablet -->
-		<div class="container hidden-xs col-sm-16 hidden-md hidden-lg">
-			<div class="row">
-			
-			</div>
-			<div class="row">
-				<div class="col-sm-6">          
-						<button type="button" class="btn btn-default ia-btn yellow-btn">Регистрация</button>
-						<button type="button" class="btn btn-default ia-btn blue-btn">Личный кабинет</button>
-			   </div>
-				<div class="col-sm-6">
-				  
-				</div>
-			</div>
-		</div>
-		<!-- mobile -->
-        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-          
-       </div>
-		
-      </div>
-    </div> 
-	
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                                <button type="button" class="btn btn-default ia-btn text-btn yellow-btn">Регистрация</button>
+                                <button type="button" class="btn btn-default ia-btn text-btn blue-btn">Личный кабинет</button>
+                       </div>
+                        <div class="col-sm-6">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+
+               </div>
+
+          </div>
+        </div>
+    </header>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

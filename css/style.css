@@ -1,9 +1,17 @@
+/* GLOBAL */
+body{
+    font-family: "Myriad Pro";
+}
+.content-container{
+    background-color: #f2f2ec;
+    border-radius: 10px;
+}
+/* BUTTONS */
 .ia-btn{
 	border-radius: 7px;
 	color: #fff;
 	border: 0;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-size:10px;
 }
 .yellow-btn{
@@ -13,6 +21,87 @@
 	background-color:rgb(99,186,196);
 	padding:6px 30px;
 }
+.image-btn{
+    padding: 15px 18px 18px;
+    border-radius: 10px;
+}
+.social-link{
+    display: inline-block;
+    width: 31px;
+    height: 27px;
+}
+.social-link.facebook{
+    background: url(../images/facebook-link.png) no-repeat #fff;
+}
+.social-link.twitter{
+    background: url(../images/twitter-link.png) no-repeat #fff;
+}
+.social-link.vimeo{
+    background: url(../images/vimeo-link.png) no-repeat #fff;
+}
+/* INPUTS */
+input.form-control{
+    border-radius: 10px;
+    height: 31px;
+    width: 340px;
+    border: 2px solid #5d3d1d;
+    font-size: 12px;
+}
+.input-container{
+    position:  relative;
+}
+.input-container .search-input~i.fa{
+    color:#a1a3ac;
+}
+.input-container .search-input~i.fa-search{
+    position: absolute;
+    top: 7px;
+    right: 19px;
+    font-size: 15px;
+}
+
+.icon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-position: 50% 50%;
+}
+.icon.cart-icon{
+    background-image: url(../images/commerce.png);
+}
+.icon.favorite-icon{
+    background-image: url(../images/favorite.png);
+}
+
+/* TEXTS */
+.yellow-text{
+    color: #e89638;
+    letter-spacing: 1.1px;
+}
+/******************************* HEADER ***********************************/
+header .contacts{
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: -0.4px;
+    background: url(../images/phone.png) no-repeat #fff;
+    padding-left: 31px;
+}
+
+header .cart-container .text-container{
+    display: inline-block;
+    width: 165px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+header .cart-container .fa-long-arrow-right{
+    padding: 0 5px;
+}
+header .cart-container{
+    display: inline-block;
+}
+/******************************* MEDIA QUERIES ********************************/
 /* Mobile */
 @media (max-width: 768px) {
 
@@ -20,19 +109,26 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width:992px) { 
-	.ia-btn{
+	.text-btn.yellow-btn{
 		padding:3px 5px;
 	}
-	.yellow-btn{
+    .text-btn.blue-btn{
 		padding:3px 14px;
 	}
  }
+@media (min-width: 992px) and (max-width: 1200px)
+{
+    input.form-control.search-input{
+        width: 257px;
+    }
+
+}
 /* (desktops, 992px and up) */
-@media (min-width: 992px)  { 
-	.ia-btn{
+@media (min-width: 992px) {
+	.text-btn.yellow-btn{
 		padding:6px 38px;
 	}
-	.blue-btn{
+    .text-btn.blue-btn{
 		padding:6px 30px;
 	}
  }
