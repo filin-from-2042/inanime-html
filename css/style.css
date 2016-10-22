@@ -49,6 +49,7 @@ input.form-control{
 }
 .input-container{
     position:  relative;
+    padding-left: 5px;
 }
 .input-container .search-input~i.fa{
     color:#a1a3ac;
@@ -56,10 +57,9 @@ input.form-control{
 .input-container .search-input~i.fa-search{
     position: absolute;
     top: 7px;
-    right: 19px;
+    left: 320px;
     font-size: 15px;
 }
-
 .icon{
     display: inline-block;
     background-repeat: no-repeat;
@@ -80,14 +80,34 @@ input.form-control{
     letter-spacing: 1.1px;
 }
 /******************************* HEADER ***********************************/
+header{
+    padding-top: 30px;
+}
+header .logo-link{
+    display: inline-block;
+    margin-top: -11px;
+}
 header .contacts{
     font-weight: bold;
     font-size: 23px;
     letter-spacing: -0.4px;
     background: url(../images/phone.png) no-repeat #fff;
     padding-left: 31px;
+    display: inline-block;
+    height: 24px;
 }
-
+header .social-container{
+    margin-left: -13px;
+}
+header .search-row{
+    padding-top: 14px;
+}
+header .user-controls-container{
+    padding-left: 20px;
+}
+header .user-controls-container .text-btn.blue-btn{
+    margin-left: 7px;
+}
 header .cart-container .text-container{
     display: inline-block;
     width: 165px;
@@ -100,6 +120,7 @@ header .cart-container .fa-long-arrow-right{
 }
 header .cart-container{
     display: inline-block;
+    margin-top: 10px;
 }
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
@@ -116,22 +137,33 @@ header .cart-container{
 		padding:3px 14px;
 	}
  }
+/* (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .text-btn.yellow-btn{
+        padding:6px 38px;
+    }
+    .text-btn.blue-btn{
+        padding:6px 30px;
+    }
+}
 @media (min-width: 992px) and (max-width: 1200px)
 {
     input.form-control.search-input{
         width: 257px;
     }
+    .text-btn.blue-btn,
+    .text-btn.yellow-btn{
+        padding: 6px 25px;
+    }
+    header .contacts span {
+        display: inline-block;
+        line-height: 22px;
+    }
+    header .cart-container .text-container {
+        width: 138px;
+    }
 
 }
-/* (desktops, 992px and up) */
-@media (min-width: 992px) {
-	.text-btn.yellow-btn{
-		padding:6px 38px;
-	}
-    .text-btn.blue-btn{
-		padding:6px 30px;
-	}
- }
  /* Large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px){ 
 
