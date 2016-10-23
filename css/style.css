@@ -79,9 +79,13 @@ input.form-control{
     color: #e89638;
     letter-spacing: 1.1px;
 }
+.gray-text{
+    color:#79828b;
+}
 /******************************* HEADER ***********************************/
 header{
     padding-top: 30px;
+    display: block;
 }
 header .logo-link{
     display: inline-block;
@@ -122,6 +126,63 @@ header .cart-container{
     display: inline-block;
     margin-top: 10px;
 }
+
+/******************************** FOOTER **************************************/
+footer .about .row{
+    padding-left: 18px;
+}
+footer p{
+    width: 216px;
+    letter-spacing: 0.1px;
+}
+footer .about p{
+    padding-top: 30px;
+}
+footer .menu{
+    text-transform: uppercase;
+}
+footer .menu ul{
+    list-style: none;
+    padding: 0;
+}
+footer .menu ul li{
+    padding-top: 14px;
+}
+footer .menu li i{
+    color:#e4a8c1;
+    font-size: 11px;
+}
+footer .menu li a{
+    color: #79828b;
+    padding-left: 10px;
+}
+footer .contacts{
+    padding-left: 23px;
+}
+footer  h4{
+    font-weight: bold;
+    font-size: 17px;
+    color:#181f24;
+}
+footer .contacts p{
+    padding-top: 11px;
+}
+footer .join{
+    padding-left: 0px;
+}
+footer .join p{
+    padding-top: 7px;
+    width: 300px;
+}
+footer .join .social-container{
+    padding-top: 10px;
+    padding-left: 3px;
+}
+footer .general-container{
+    background-image: url(../images/hare-footer.png);
+    background-repeat: no-repeat;
+    background-position: 97% 76%;
+}
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
 @media (max-width: 768px) {
@@ -134,6 +195,18 @@ header .cart-container{
     }
     header .image-btn{
         padding: 11px 10px 12px;
+    }
+    footer .general-container{
+        background-position: 120% 76%;
+    }
+    footer .contacts{
+        text-align: center;
+    }
+    footer .contacts p{
+        display: inline-block;
+    }
+    footer .contacts .social-container{
+        padding-top: 19px;
     }
 }
 
@@ -191,6 +264,9 @@ header .cart-container{
     }
     header .search-button-container{
         padding-top: 5px;
+    }
+    footer .general-container{
+        background-position: 100% 76%;
     }
  }
 /* (desktops, 992px and up) */
