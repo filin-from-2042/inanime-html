@@ -1,4 +1,8 @@
 /* GLOBAL */
+@font-face {
+    font-family: Myriad Pro;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
 body{
     font-family: "Myriad Pro";
 }
@@ -294,6 +298,9 @@ footer .general-container{
     header .cart-container .text-container {
         width: 138px;
     }
+	.search-input-container .search-input~i.fa-search {
+		left: 238px;
+	}
 
 }
  /* Large devices (large desktops, 1200px and up) */
