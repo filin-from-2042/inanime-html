@@ -131,6 +131,56 @@ header .cart-container{
     margin-top: 10px;
 }
 
+/******************************** NAVIGATION ****************************************/
+nav.navigation{	
+	background: rgb(59,174,218);
+    background: -moz-linear-gradient(top,rgb(59,174,218) 0%,rgb(54,158,198) 50%,rgb(47,139,175) 100%);
+    background: -webkit-linear-gradient(top,rgb(59,174,218) 0%,rgb(54,158,198) 50%,rgb(47,139,175) 100%);
+    background: -o-linear-gradient(top,rgb(59,174,218) 0%,rgb(54,158,198) 50%,rgb(47,139,175) 100%);
+    background: -ms-linear-gradient(top,rgb(59,174,218) 0%,rgb(54,158,198) 50%,rgb(47,139,175) 100%);
+    background: linear-gradient(top,rgb(59,174,218) 0%,rgb(54,158,198) 50%,rgb(47,139,175) 100%);
+	margin-top: 20px;
+}
+nav.navigation ul.first-level{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+nav.navigation ul.first-level > li{
+	float: left;
+    height: 55px;
+    text-align: center;
+    min-width: 105px;
+    text-align: center;
+}
+nav.navigation ul.first-level > li.dropdown{	
+    background: -moz-linear-gradient(top,rgb(245,173,91) 0%,rgb(228,156,74) 50%,rgb(213,141,59) 100%);
+    background: -webkit-linear-gradient(top,rgb(245,173,91) 0%,rgb(228,156,74) 50%,rgb(213,141,59) 100%);
+    background: -o-linear-gradient(top,rgb(245,173,91) 0%,rgb(228,156,74) 50%,rgb(213,141,59) 100%);
+    background: -ms-linear-gradient(top,rgb(245,173,91) 0%,rgb(228,156,74) 50%,rgb(213,141,59) 100%);
+    background: linear-gradient(top,rgb(245,173,91) 0%,rgb(228,156,74) 50%,rgb(213,141,59) 100%);
+	padding: 0px 25px;
+    font-size: 14px;
+	width: 245px;
+}
+nav.navigation ul.first-level > li > a,
+nav.navigation ul.first-level > li > i{
+	line-height:55px;
+	text-transform: uppercase;
+	letter-spacing: -0.3px;
+}
+nav.navigation ul.first-level > li > a:hover{
+	text-decoration:none;
+}
+nav.navigation ul.first-level > li > a,
+nav.navigation ul.first-level > li > a:hover,
+nav.navigation ul.first-level > li > i{
+	color:#fff;
+}
+nav.navigation ul.first-level > li.dropdown > i{
+	float:right;
+    font-size: 23px;
+}
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
