@@ -181,7 +181,9 @@ nav.navigation a:hover > i{
 	color:#333;
 }
 nav.navigation ul.first-level > li:hover > a,
-nav.navigation ul.first-level > li:hover > i{
+nav.navigation ul.first-level > li:hover > i,
+nav.navigation ul.first-level > li.open > a,
+nav.navigation ul.first-level > li.open > i{
     color: #333;
 }
 nav.navigation ul.first-level > li> i{
@@ -218,6 +220,7 @@ nav.navigation ul.first-level > li.dropdown > i.visible-md.vsible-lg{
     padding-right: 20px;
 }
 nav.navigation ul.first-level > li.dropdown:hover > ul.second-level,
+nav.navigation ul.first-level > li.dropdown.open> ul.second-level,
 nav.navigation .third-level-container > ul{
     display: block;
     margin: 0;
@@ -568,10 +571,13 @@ footer .general-container{
 	nav.navigation ul.first-level > li.dropdown > i.visible-sm{
 		padding-left: 10px;
 	}
-	nav.navigation ul.first-level > li.dropdown:hover > ul.second-level{
+	nav.navigation ul.first-level > li.dropdown:hover > ul.second-level,
+	nav.navigation ul.first-level > li.dropdown.open > ul.second-level{
 		width:auto;
 		top:initial;
 		margin-top:55px;
+		padding: 15px 0 22px; 
+		border:none;
 	}
 	
  }
