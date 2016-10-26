@@ -95,7 +95,8 @@ header .logo-link{
     display: inline-block;
     margin-top: -11px;
 }
-header .contacts{
+header .contacts,
+nav.navigation .contacts{
     font-weight: bold;
     font-size: 23px;
     letter-spacing: -0.4px;
@@ -332,7 +333,7 @@ footer .general-container{
 }
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
 	header{
 	padding-top:20px;
 	}
@@ -372,11 +373,97 @@ footer .general-container{
 	header .navbar-toggle .icon-bar{
 		width: 12px;
 	}
-	#top-navigation-bar{
-		/* height: 0px; */
-	}
 	.mobile-collapsed{
 		display:none;
+	}
+	nav.navigation{
+		margin-top:13px;
+	}
+	nav.navigation  > .container{
+		padding:0;
+	}
+	nav.navigation ul.second-level{
+		width:100%;
+	}
+	nav.navigation ul.second-level > li:hover > a, 
+	nav.navigation ul.second-level > li > a:hover,
+	nav.navigation ul.second-level > li:hover > a:hover{
+		border-radius: 5px;
+		margin-right: 13px;
+	}
+	nav.navigation ul.first-level{
+		margin:25px 0 0 0px;
+	}
+	nav.navigation ul.first-level > li,
+	nav.navigation ul.first-level > li.dropdown{
+		float:none;
+		text-align: initial;
+		width:auto;
+		background:none;
+		height: 35px;
+	}
+	nav.navigation ul.first-level > li > a,
+	nav.navigation ul.first-level > li.dropdown > a	{
+		float:none;
+		padding: 0 0 0 35px;
+	}
+	nav.navigation ul.first-level > li > a,
+	nav.navigation ul.first-level > li > i{
+		font-size:17px;
+		line-height:35px;
+	}
+	nav.navigation ul.first-level > li:hover{
+		background-color: #f2f2ec;
+	}
+	nav.navigation .contacts{
+		color:#fff;
+		height:auto;
+		display:block;
+		background-color:transparent;    
+		font-size: 20px;
+		margin: 18px 19px;
+		letter-spacing: 0.5px;
+	}
+	nav.navigation .location-container{
+		margin-top:10px;
+	}
+	nav.navigation  .geo-title{
+		text-align: right;
+		display: block;
+		color: #fff;
+		font-size: 17px;
+	}
+	nav.navigation .text-btn{
+		font-size: 12px;
+		padding: 5px 25px;
+	}
+	nav.navigation .text-btn.blue-btn{
+		padding: 5px 14px;
+	}
+	nav.navigation .user-buttons-container,
+	nav.navigation .search-container{
+		margin-top:28px;
+	}
+	nav.navigation .registration-container{
+		text-align: right;
+		padding-right: 10px;
+	}
+	nav.navigation .profile{
+		padding-left:6px;
+	}
+	nav.navigation .search-container .search-input-container {
+		position: relative;
+		padding-left: 12px;
+		padding-bottom: 29px;
+	}
+	nav.navigation .search-container .search-input-container input.form-control {
+		width: 267px;
+	}
+	nav.navigation .search-container .search-input-container .search-input~i.fa-search {
+		position: absolute;
+		top: 7px;
+		left: 255px;
+		font-size: 15px;
 	}
     footer .general-container{
         background-position: 120% 76%;
@@ -393,7 +480,7 @@ footer .general-container{
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width:992px) { 
+@media (min-width: 760px) and (max-width:992px) { 
 	.text-btn.yellow-btn{
         padding: 4px 17px;
 	}
