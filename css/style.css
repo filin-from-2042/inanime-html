@@ -216,9 +216,6 @@ nav.navigation ul.first-level > li.dropdown > i{
 nav.navigation ul.first-level > li.dropdown > i.visible-md.vsible-lg{
     padding-right: 20px;
 }
-nav.navigation ul.first-level > li.dropdown > i.visible-sm{
-    padding-left: 5px;
-}
 nav.navigation ul.first-level > li.dropdown:hover > ul.second-level,
 nav.navigation .third-level-container > ul{
     display: block;
@@ -419,11 +416,10 @@ footer .general-container{
         background-position: 100% 76%;
     }
 	nav.navigation{
-		margin-top:12px;
+		margin-top:8px;
 	}
 	nav.navigation ul.second-level > li.dropdown:hover >div.third-level-container,
-	nav.navigation ul.second-level > li.dropdown:hover >div.third-level-container>div.third-level-container,
-	nav.navigation ul.second-level > li.dropdown:hover >div.third-level-container>div.third-level-container>div.third-level-container{
+	nav.navigation ul.second-level > li.dropdown:hover >div.third-level-container>div.third-level-container{
 		display: block;
 		position:absolute;
 		margin: 0;
@@ -431,19 +427,30 @@ footer .general-container{
 		left: 100%;
 		top:0;
 	}
+	nav.navigation ul.second-level > li.dropdown:hover >div.third-level-container>div.third-level-container{
+		width:128%;
+	}
 	nav.navigation ul.first-level > li.dropdown{
 		width:auto;
 		min-width:120px;
+		position:static;
 	}
 	nav.navigation ul.first-level > li.dropdown > a{
-		min-width: 95px;
-		padding: 0 20px;
+		min-width: auto;
+		padding: 0px 10px 0 0;
 	}
 	nav.navigation ul.first-level > li > a,
 	nav.navigation ul.first-level > li > i{
-		padding:0 15px;
+		padding:0 8px;
+	}	
+	nav.navigation ul.first-level > li.dropdown > i.visible-sm{
+		padding-left: 10px;
 	}
-	
+	nav.navigation ul.first-level > li.dropdown:hover > ul.second-level{
+		width:auto;
+		top:initial;
+		margin-top:55px;
+	}
 	
  }
 /* (desktops, 992px and up) */
@@ -505,6 +512,10 @@ footer .general-container{
 	}
 	nav.navigation ul.second-level > li   i{
 		padding-right:5px;
+	}
+	nav.navigation ul.first-level > li.dropdown:hover > ul.second-level, 
+	nav.navigation .third-level-container > ul{
+		padding:5 0 10px;
 	}
 
 }
