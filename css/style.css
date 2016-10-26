@@ -333,6 +333,9 @@ footer .general-container{
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
 @media (max-width: 768px) {
+	header{
+	padding-top:20px;
+	}
     header .logo-link{
         width: 150px;
     }
@@ -340,9 +343,41 @@ footer .general-container{
     header .img-favorite{
         width: 14px;
     }
+	header .img-favorite{
+		padding-top:2px;
+	}
     header .image-btn{
-        padding: 11px 10px 12px;
+        padding: 11px 11px 12px;
+		vertical-align: top;
+		margin-left:4px;
     }
+	header .navbar-toggle,
+	header .navbar-toggle.collapsed{
+		border-color:rgb(95,60,28);
+		float:none;
+		border-width: 2px;
+		float: none;
+		margin: 0 0 0 7px;
+		border-radius: 10px;
+		padding: 10px 10px;
+	}
+	header .navbar-toggle,
+	header .navbar-toggle.collapsed .icon-bar{
+		background:rgb(95,60,28);
+	}
+	header .navbar-toggle.collapsed ,
+	header .navbar-toggle .icon-bar{
+		background:#fff;
+	}
+	header .navbar-toggle .icon-bar{
+		width: 12px;
+	}
+	#top-navigation-bar{
+		/* height: 0px; */
+	}
+	.mobile-collapsed{
+		display:none;
+	}
     footer .general-container{
         background-position: 120% 76%;
     }
