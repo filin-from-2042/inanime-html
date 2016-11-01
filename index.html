@@ -329,6 +329,142 @@
 		  
 	  </div>
 	</nav>
+	<div>
+		<div class="container">
+		<div class="row main-carousel">
+			<div class="col-xs-18 col-sm-18 col-md-18 col-lg-18">
+			</div>
+			<div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
+				<div id="carousel-custom-vertical" class="carousel-custom">
+					<div class="prev button"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+					<ul>
+						<li>
+							<img src="images/vert-slider-example.png">
+							<a href="/" class="text"><span>Новый косплейный</span><span>костюм name</span></a>
+						</li>
+						<li>
+							<img src="images/vert-slider-example2.png">
+							<a href="/" class="text">Название поста или новости</a>
+						</li>
+						<li>
+							<img src="images/vert-slider-example3.png">
+							<a href="/" class="text">Название поста или новости</a>
+						</li>
+					</ul>
+					<div class="next button"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<script>
+		
+		/* конфигурация */
+		var height = 180; // ширина изображения
+		var count = 2; // количество изображений
+		var position = 0; // текущий сдвиг влево
+		var carousel = document.getElementById('carousel-custom-vertical');
+		var list = carousel.querySelector('ul');
+		var listElems = carousel.querySelectorAll('li');
+	
+		carousel.querySelector('.prev').onclick = function() {
+		  // сдвиг влево
+		  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+		  position = Math.min(position + (height+10) * count, 0)
+		  $('#carousel-custom-vertical ul').animate(
+			{
+				marginTop:position + 'px'
+			}
+		  );
+		  //list.style.marginTop = position + 'px';
+		};
+
+		carousel.querySelector('.next').onclick = function() {
+		  // сдвиг вправо
+		  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+		  position = Math.max(position - (height+10) * count, -(height+10) * (listElems.length - count));
+		  $('#carousel-custom-vertical ul').animate(
+			{
+				marginTop:position + 'px'
+			}
+		  );
+		  //list.style.marginTop = position + 'px';
+		};
+		
+	</script>
+	<style>
+		.carousel-custom{
+			overflow:hidden;
+			z-index:100;
+			height:380px;
+		}
+		.carousel-custom,
+		.carousel-custom .button{
+			width:280px;
+		}
+		.carousel-custom .button{
+			display:none;
+			z-index:101;
+		}
+		.carousel-custom:hover .button{
+			display:block;
+		}
+		.carousel-custom .button{
+			position:absolute;
+			text-align:center;
+			background-color: #ccc;
+			opacity: 0.5;
+			padding: 5px 0;
+		}
+		.carousel-custom .button:hover{
+			cursor:pointer;
+		}
+		.carousel-custom .prev{
+			top:0;
+		}
+		.carousel-custom .next{
+			bottom:0;
+		}
+		.carousel-custom ul{
+			margin:0;
+			padding:0;
+		}
+		.carousel-custom ul li{
+			list-style:none;
+			text-align: center;
+			padding:5px 0;
+			position:relative;
+		}
+		.carousel-custom ul li img{
+			height:180px;
+		}
+		.carousel-custom li .text{
+			position: absolute;
+			top: 42%;
+			left: 0;
+			color: #fff;
+			background: rgba(0,0,0,0.5);
+			padding: 10px 15px;
+			max-width: 167px;
+			font-size: 14px;
+			text-transform: uppercase;
+			line-height: 22px;
+			text-align: left;
+		}
+		@media (min-width: 760px) and (max-width:992px) {
+			.carousel-custom ul li img{
+				height:100px;
+			}
+			.carousel-custom{
+				height:200px;
+			}
+			.carousel-custom,
+			.carousel-custom .prev,
+			.carousel-custom .next{
+				width:160px;
+			}
+		}
+	</style>
     <footer>
         <div class="container gray-text general-container">
             <div class="row">
@@ -381,6 +517,8 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+	<!-- bxSlider Javascript file -->
+	<script src="js/script.js"></script>
 </body>
 </html>
