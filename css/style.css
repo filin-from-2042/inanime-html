@@ -742,11 +742,30 @@ footer .general-container{
     .product-item-preview.vertical .data-container,
     .product-item-preview.horizontal .data-container {
         text-align: center;
+        width: inherit;
     }
     .product-item-preview.vertical .title-container,
     .product-item-preview.horizontal .title-container {
         max-width:115px;
         padding:0;
+    }
+    .product-item-preview .icons-container .additional-icon.new {
+        background-image:url(../images/product-icon-new-tablet.png);
+        background-repeat:no-repeat;
+        z-index: 100;
+    }
+    .product-item-preview .icons-container .additional-icon.bestseller{
+        background-image:url(../images/product-icon-bestseller-tablet.png);
+        background-repeat:no-repeat;
+        z-index: 99;
+    }
+    .product-item-preview .icons-container .additional-icon.recommended{
+        background-image:url(../images/product-icon-recommended-tablet.png);
+        background-repeat:no-repeat;
+        z-index: 98;
+    }
+    .product-item-preview .icons-container .additional-icon{
+        margin-top: -30px;
     }
 }
 
@@ -883,7 +902,7 @@ footer .general-container{
     .product-item-preview.vertical .title-container {
         padding: 4px;
     }
-    product-item-preview .rate-container {
+    .product-item-preview .rate-container {
         margin: 0;
     }
 
@@ -898,6 +917,24 @@ footer .general-container{
     }
     .product-item-preview.horizontal .data-container {
         height: 168px;
+    }
+    .product-item-preview .icons-container .additional-icon.new {
+        background-image:url(../images/product-icon-new-tablet.png);
+        background-repeat:no-repeat;
+        z-index: 100;
+    }
+    .product-item-preview .icons-container .additional-icon.bestseller{
+        background-image:url(../images/product-icon-bestseller-tablet.png);
+        background-repeat:no-repeat;
+        z-index: 99;
+    }
+    .product-item-preview .icons-container .additional-icon.recommended{
+        background-image:url(../images/product-icon-recommended-tablet.png);
+        background-repeat:no-repeat;
+        z-index: 98;
+    }
+    .product-item-preview .icons-container .additional-icon{
+        margin-top: -30px;
     }
 	
  }
