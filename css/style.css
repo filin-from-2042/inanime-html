@@ -25,6 +25,14 @@ body{
 	background-color:rgb(99,186,196);
 	padding:6px 30px;
 }
+.blue-dark-btn{
+    background-color:#39acd8;
+}
+.view-all-btn{
+    text-transform: none;
+    font-size: 13px;
+    padding: 6px 24px;
+}
 .image-btn{
     padding: 15px 18px 18px;
     border-radius: 10px;
@@ -550,6 +558,135 @@ nav.navigation .third-level-container li{
     font-size: 16px;
     font-weight: bold;
 }
+.section-reviews-news{
+    padding-top: 30px;
+}
+/******************************** REVIEWS **************************************/
+.reviews-list{
+    margin-top: 0px;
+}
+.reviews-list .title-container .view-all-btn{
+    float:right;
+}
+.reviews-list .title-container{
+    padding-right: 25px;
+}
+.reviews-list .title-container h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+.reviews-list .review-container{
+    display: inline-block;
+    width: 425px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.reviews-list-container{
+    margin-top: 20px;
+}
+.review-container:nth-child(odd) {
+    margin-right: 20px;
+}
+.review-container a{
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    display:block;
+    height: 100%;
+}
+.review-container a:hover{
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.review-container img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.review-container .review-info{
+    background-color: #3baeda;
+    width: 145px;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 40px;
+}
+.review-container .review-title,
+.review-container .review-anonce{
+    padding: 5px 18px;
+}
+.review-container .review-title{
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.review-container .review-anonce{
+    line-height: 23px;
+}
+.review-container .review-info .text{
+    font-size: 13px;
+}
+.review-container .review-info .text i{
+    padding-right: 5px;
+}
+/********************************* NEWS *************************************/
+.news-list{
+    margin-top: 0px;
+    border-radius: 10px;
+    border: 2px solid #68422e;
+    margin-left: -20px;
+    padding: 15px;
+}
+.news-list .title-container{
+    padding-left: 6px;
+    margin-bottom: 30px;
+}
+.news-list .grey-container{
+    border-radius: 10px;
+}
+.news-list .title-container .view-all-btn{
+    float:right;
+}
+.news-list .title-container h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+.new-container{
+    padding: 6px 12px;
+}
+.new-container:first-child{
+    margin-bottom: 19px;
+}
+.new-container .new-title{
+    margin-bottom: 20px;
+}
+.new-container .new-title .title {
+    color: #000;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.new-container .new-title .date{
+    color:#79828b;
+    float:right;
+}
+.new-container .new-content{
+    color:#79828b;
+}
+.new-container .new-content a{
+    text-decoration: underline;
+    color:#fc9a00;
+}
+.new-container .new-content a:hover{
+    text-decoration: none;
+}
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -810,6 +947,62 @@ footer .general-container{
     .product-item-preview .icons-container .additional-icon{
         margin-top: -30px;
     }
+
+    /**************************** PREVIEW ************************/
+    .reviews-list .title-container {
+         padding-right: 0px;
+    }
+    .reviews-list .title-container h2 {
+        font-size: 22px;
+    }
+    .reviews-list-container {
+        margin-top: 12px;
+        max-height: 335px;
+        overflow: hidden;
+    }
+    .view-all-btn {
+        padding: 6px 16px;
+    }
+    .reviews-list .review-container {
+        width: 289px;
+        height: 158px;
+        margin-bottom: 13px;
+    }
+    .review-container .review-info {
+        padding: 10px 10px 10px 15px;
+    }
+    .review-container .review-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+    /*************************** NEWS *********************/
+    .news-list {
+        margin-left: 0px;
+        padding: 21px 15px;
+        margin-top: 30px;
+    }
+    .news-list .title-container {
+        margin-bottom: 17px;
+    }
+    .news-list  .new-container{
+        display: none;
+    }
+    .news-list  .new-container:first-child {
+        display: block;
+        margin-bottom: 0;
+    }
+    .new-container .new-title .date {
+        float: none;
+        line-height: 38px;
+    }
+    .new-container .new-title {
+        margin-bottom: 0;
+    }
+    .new-container .new-content {
+        line-height: 18px;
+    }
 }
 
 /* Tablet */
@@ -979,6 +1172,66 @@ footer .general-container{
     .product-item-preview .icons-container .additional-icon{
         margin-top: -30px;
     }
+
+    /******************************* REVIEWS **************************/
+    .reviews-list .title-container h2 {
+        margin-top: 0;
+        font-size: 21px;
+        padding-left: 10px;
+        padding-top: 3px;
+
+    }
+    .reviews-list .title-container {
+        padding-right: 12px;
+    }
+    .reviews-list-container {
+        margin-top: 15px;
+        padding-left: 7px;
+    }
+    .reviews-list .review-container {
+        width: 342px;
+        height: 185px;
+    }
+    .review-container .review-info {
+        margin-bottom: 23px;
+    }
+    .review-container .review-title {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+    }
+    .review-container .review-title,
+    .review-container .review-anonce {
+        padding: 2px 15px;
+    }
+    .review-container .review-info {
+        padding: 10px 10px 10px 15px;
+    }
+    .review-container:nth-child(odd) {
+        margin-right: 17px;
+    }
+    .reviews-list .review-container {
+        margin-bottom: 13px;
+    }
+    .review-container .review-anonce {
+        line-height: 18px;
+    }
+    /***************** NEWS ************************/
+
+    .news-list {
+        margin: 0 10px 0 7px;
+    }
+    .new-container {
+        display: inline-block;
+        width: 322px;
+        vertical-align: top;
+    }
+    .new-container:first-child{
+        margin-right: 18px;
+    }
+    .view-all-btn {
+        padding: 6px 10px;
+    }
 	
  }
 /* (desktops, 992px and up) */
@@ -1048,6 +1301,17 @@ footer .general-container{
     .container.articles-links .article-container{
 		width:230px;
 	}
+    .reviews-list .review-container {
+        width: 325px;
+        height: 175px;
+    }
+    .review-container .review-info {
+        margin-bottom: 0px;
+    }
+    .view-all-btn {;
+        padding: 6px 15px;
+    }
+
 
 }
  /* Large devices (large desktops, 1200px and up) */
