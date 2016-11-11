@@ -687,6 +687,81 @@ nav.navigation .third-level-container li{
     text-decoration: none;
 }
 
+/******************************** SORT CONTAINER *******************************/
+.select-container .btn{
+   border:2px solid #5d3d1d;
+   border-radius:10px;
+   text-align:left;
+   height: 29px;
+   padding-right:7px;
+   padding-top: 3px;
+   padding-left: 10px;
+}
+.select-container .btn,
+.select-container.order .dropdown-menu {
+   color:#79828b;
+   font-size:13px;
+}
+.select-container.order .dropdown-menu li {
+    padding-left: 10px;
+}
+    .select-container.order .dropdown-menu li > span {
+        width:100%;
+        display:inline-block;
+    }
+.select-container.order .dropdown-menu li:hover {
+    color:#1a2228;
+}
+.select-container.dropdown .btn > span.glyphicon {
+    float:right;
+    color:#68422e;
+    font-size: 10px;
+    top:5px;
+}
+.select-container.dropdown .btn > span.text {
+    display:inline-block;
+    /*width:75px;*/
+    overflow:hidden;
+}
+.select-container.order .dropdown-menu {
+   border-top:none;
+   border-left:2px solid #5d3d1d;
+   border-right:2px solid #5d3d1d;
+   border-bottom:2px solid #5d3d1d;
+   border-top-left-radius:0;
+   border-top-right-radius:0;
+   border-bottom-left-radius:10px;
+   border-bottom-right-radius:10px;
+   top:85%;
+}
+.select-container.dropdown.open > .dropdown-toggle.btn-default {
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border: 2px solid #5d3d1d;
+    background-color: #fff;
+}
+.select-container .btn:focus {
+    background-color:#fff;
+}
+
+
+
+.section-catalog .sort-container .select-title,
+.section-catalog .sort-container .select-container.order{
+    display:inline-block;
+    vertical-align:middle;
+}
+.section-catalog .select-container.order .btn,
+.section-catalog .select-container.order .dropdown-menu {
+   min-width: 120px;
+}
+.select-container.dropdown .btn > span.text {
+    width:85px;
+}
+.section-catalog .select-container.order .dropdown-menu li span.glyphicon {
+    font-size: 10px;
+}
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;

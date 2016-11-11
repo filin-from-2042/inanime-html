@@ -838,6 +838,48 @@
                 </div>
             </div>
         </div>
+        <div class="container section-catalog">
+            <div class="row">
+                <div class="col-md-24 col-lg-24">
+                    <div class="sort-container clearfix">
+                        <div class="select-title">Сортировать по:</div>
+                        <div class="select-container order">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            <select name="sort_order" id="section-sort-order" onchange="inanime_new.getSectionPage(this.value, 742,15, 1, true);window.scrollLoadStartFrom = 2;">
+                                <option value="catalog_PRICE_1;desc"  >По цене (по убыванию)</option>
+                                <option value="catalog_PRICE_1;asc"  >По цене (по возрастанию)</option>
+                                <option value="PROPERTY_rating;desc"  >По рейтингу (по убыванию)</option>
+                                <option value="PROPERTY_rating;asc"  >По рейтингу (по возрастанию)</option>
+                                <option value="active_from;desc"  >По новизне (по убыванию)</option>
+                                <option value="active_from;asc"  >По новизне (по возрастанию)</option>
+                                <option value="catalog_QUANTITY;desc"  >По наличию (по убыванию)</option>
+                                <option value="catalog_QUANTITY;asc" selected >По наличию (по возрастанию)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sort-container ">
+                        <div class="select-title">Сортировать по:</div>
+                        
+                        <div class="dropdown select-container order">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="text">Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><span onclick="inanime_new.ddSetSelectedText(this);">По цене <span class="glyphicon glyphicon-triangle-top"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По цене <span class="glyphicon glyphicon-triangle-bottom"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По рейтингу <span class="glyphicon glyphicon-triangle-top"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По рейтингу <span class="glyphicon glyphicon-triangle-bottom"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По новизне <span class="glyphicon glyphicon-triangle-top"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По новизне <span class="glyphicon glyphicon-triangle-bottom"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По наличию <span class="glyphicon glyphicon-triangle-top"></span></span></li>
+                            <li><span onclick="inanime_new.ddSetSelectedText(this)">По наличию <span class="glyphicon glyphicon-triangle-bottom"></span></span></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>	
 	
     <footer>
