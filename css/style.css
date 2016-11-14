@@ -37,6 +37,28 @@ body{
     padding: 15px 18px 18px;
     border-radius: 10px;
 }
+.splitted-btn {
+    padding:0;
+    border-radius:10px;
+}
+.splitted-btn span {
+    display:inline-block;
+    padding:11px 13px;
+    vertical-align:top;
+}
+.splitted-btn span.icon-btn {
+    border-right:1px solid rgb(247,187,114);
+}
+.splitted-btn:hover span.icon-btn {    
+    border-right:1px solid #e6e6e6;
+} 
+.splitted-btn span.icon-btn img {
+    width:17px;
+}
+.splitted-btn span.text-btn {    
+    font-size: 14px;
+    padding: 13px 43px 9px 32px;
+} 
 .social-link{
     display: inline-block;
     width: 31px;
@@ -515,6 +537,13 @@ nav.navigation .third-level-container li{
         .product-item-preview.horizontal .data-container{
             display:inline-block;
         }
+            .product-item-preview .image-btn.in-favorite {
+                padding:14px;
+                margin-left: 5px;
+            }
+            .product-item-preview .image-btn.in-favorite img {
+                width:17px;
+            }
 
     /********************** CAROUSEL PRODUCTS **********************************/
     .carousel-products{
@@ -821,6 +850,8 @@ footer .general-container{
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
 @media (max-width: 760px) {
+
+
 	header{
 	padding-top:20px;
 	}
@@ -1023,6 +1054,20 @@ footer .general-container{
         margin-top: -30px;
     }
 
+    .product-item-preview .splitted-btn.in-cart span.text-btn {    
+        font-size: 13px;
+        padding: 7px;
+    } 
+    .product-item-preview .splitted-btn.in-cart span.icon-btn {    
+        display:none;
+    } 
+    .product-item-preview .image-btn.in-favorite {
+        padding: 10px;
+        margin-left: 2px;
+    }
+    .product-item-preview .image-btn.in-favorite img {
+        width: 12px;
+    }
     /**************************** PREVIEW ************************/
     .reviews-list .title-container {
          padding-right: 0px;
@@ -1248,6 +1293,22 @@ footer .general-container{
         margin-top: -30px;
     }
 
+    .product-item-preview .splitted-btn.in-cart span.text-btn {    
+        font-size: 11px;
+        padding: 9px 34px 9px 23px;
+    } 
+    .product-item-preview .splitted-btn.in-cart span.icon-btn img {
+        width:12px;
+    }
+    .product-item-preview .splitted-btn.in-cart span {
+        padding:9px 11px;
+    }
+    .product-item-preview .image-btn.in-favorite {
+        padding:11px;
+    }
+    .product-item-preview .image-btn.in-favorite img {
+        width:13px;
+    }
     /******************************* REVIEWS **************************/
     .reviews-list .title-container h2 {
         margin-top: 0;
