@@ -79,16 +79,54 @@ function inanime_new() {
             );
         };
     }
+
+    this.init_product_horizontal_carousel = function(element_id, elements_count)
+    {
+        var carouselData =
+        {
+            cc_count: elements_count,
+            cc_position: 0,
+            carouselEl: document.getElementById(element_id),
+            cc_width: $(document.getElementById(element_id).querySelector('li')).width(),
+            paddingRight: parseInt($(document.getElementById(element_id).querySelector('li')).css('paddingRight'))
+        };
+
+        inanime_new[element_id] = carouselData;
+        $('#'+element_id).css('width',(carouselData.cc_width+carouselData.paddingRight)*elements_count );
+        $('#'+element_id).closest('.photo-carousel-container').find('.prev').click(function () {
+            var prevPosition = inanime_new[element_id].cc_position;
+            var width = inanime_new[element_id].cc_width;
+            var paddingRight = inanime_new[element_id].paddingRight;
+            var count = inanime_new[element_id].cc_count;
+
+            inanime_new[element_id].cc_position = Math.min(prevPosition + (width + paddingRight) * count, 0);
+            $('#' + element_id + ' ul').animate(
+                {
+                    marginLeft: inanime_new[element_id].cc_position + 'px'
+                }
+            );
+        });
+
+        $('#'+element_id).closest('.photo-carousel-container').find('.next').click(function () {
+            var listElems = inanime_new[element_id].carouselEl.querySelectorAll('li');
+            var prevPosition = inanime_new[element_id].cc_position;
+            var width = inanime_new[element_id].cc_width;
+            var paddingRight = inanime_new[element_id].paddingRight;
+            var count = inanime_new[element_id].cc_count;
+
+            inanime_new[element_id].cc_position = Math.max(prevPosition - (width + paddingRight) * count, -(width + paddingRight) * (listElems.length - count));
+            $('#' + element_id + ' ul').animate(
+                {
+                    marginLeft: inanime_new[element_id].cc_position + 'px'
+                }
+            );
+        });
+
+    }
+
     this.ddSetSelectedText = function (element)
     {
         $(element).closest(".dropdown").find(".btn.dropdown-toggle").text('').append('<span class="glyphicon glyphicon-chevron-down"></span><span class="text">'+element.innerHTML+'</span>')/*.text(element.innerHTML)*/;
     }
 }
-$(document).ready(function () {
-    window.inanime_new = new inanime_new();
-
-    inanime_new.init_custom_vertical_carousel('carousel-custom-vertical', 2);
-
-    if(window.innerWidth >= 760 )inanime_new.init_custom_horizontal_carousel('carousel-custom-horizontal-books', 3);
-    else  inanime_new.init_custom_horizontal_carousel('carousel-custom-horizontal-books', 2);
-});
+window.inanime_new = new inanime_new();

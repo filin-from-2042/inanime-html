@@ -946,5 +946,15 @@
     <script src="js/bootstrap.min.js"></script>	
 	<!-- bxSlider Javascript file -->
 	<script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            window.inanime_new = new inanime_new();
+
+            inanime_new.init_custom_vertical_carousel('carousel-custom-vertical', 2);
+
+            if(window.innerWidth >= 760 )inanime_new.init_custom_horizontal_carousel('carousel-custom-horizontal-books', 3);
+            else  inanime_new.init_custom_horizontal_carousel('carousel-custom-horizontal-books', 2);
+        });
+    </script>
 </body>
 </html>

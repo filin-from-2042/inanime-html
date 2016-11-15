@@ -791,6 +791,118 @@ nav.navigation .third-level-container li{
     font-size: 10px;
 }
 
+
+/********************************* PRODUCT CARD ***********************************/
+.photo-big{
+    border-radius: 10px;
+    width: 100%;
+}
+.photo-carousel-container{
+    text-align: center;
+}
+.preview-photo-carousel{
+    position: relative;
+    overflow: hidden;
+    margin-left: -25px;
+    padding-left: 25px;
+    display: inline-block;
+    margin-top: 28px;
+}
+.preview-photo-carousel ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 999999px;
+}
+.photo-carousel-container .button{
+    color: #68422e;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -59px;
+    font-size: 21px;
+}
+.photo-carousel-container .next.button{
+    right: 7px;
+}
+.photo-carousel-container .prev.button{
+    left: 7px;
+}
+.preview-photo-carousel ul li{
+    float:left;
+    /*display:inline-block;*/
+    width: 120px;
+    height: 78px;
+    padding-right: 25px;
+}
+.preview-photo-carousel ul li img{
+    width: 100%;
+}
+/************************* PRODUCT INFO ********************/
+.product-info{
+    margin-top: 107px;
+}
+.product-info img{
+    border-radius: 10px;
+}
+.product-info .data-column{
+    padding-left: 45px;
+    margin-top: 5px;
+}
+.product-info .art-container,
+.product-info .price-container .discount-amount{
+    color: #79828b;
+    font-size: 12px;
+}
+.product-info .art-container span{
+    margin-right: 18px;
+    font-size: 14px;
+}
+.product-info .art-container span.notavalable{
+    color:#de263c;
+}
+.product-info .rate-container{
+    height: 55px;
+}
+.product-info .price-container .price {
+    font-weight: bold;
+    font-size: 39px;
+    letter-spacing: 1.1px;
+}
+.product-info .price-container .price.old{
+    text-decoration: line-through;
+    color: #000;
+    font-size: 30px;
+    margin-right: 6px;
+}
+.product-info .price-container .price.new{
+
+}
+.product-info .price-container {
+    margin-top: 3px;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+.product-info .discount .discount-amount{
+    margin-right: 24px;
+    font-size: 15px;
+}
+.product-info .discount .found-cheaper{
+    text-decoration: underline;
+    color: #fc9a00;
+    cursor:pointer;
+}
+.product-info .price-container .found-cheaper:hover{
+    text-decoration: none;
+}
+.product-info .title-container{
+    margin-top: 10px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: bold;
+
+}
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
