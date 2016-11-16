@@ -128,5 +128,33 @@ function inanime_new() {
     {
         $(element).closest(".dropdown").find(".btn.dropdown-toggle").text('').append('<span class="glyphicon glyphicon-chevron-down"></span><span class="text">'+element.innerHTML+'</span>')/*.text(element.innerHTML)*/;
     }
+
+    this.radioClick = function (event)
+    {
+        var radioButton = $(this);
+        radioButton.closest('.radio-container').find('input.ia-radio-value').val(radioButton.find('span.value.hidden').text());        
+        radioButton.closest('.radio-container').find('.ia-radio-button').removeClass('active');
+        radioButton.addClass('active');
+    }
+
+    this.counterButtonClick = function ()
+    {
+        var button = $(this);
+        var counterContainer = button.closest('.ia-counter-container');
+        var input = counterContainer.find('input.counter-value');
+        if(button.hasClass('increase'))
+        {
+            input.val(parseInt(input.val())+1);
+        }
+        else if (button.hasClass('decrease'))
+        {
+            if (input.val() > 1) input.val(parseInt(input.val()) - 1);
+        }
+    }
 }
 window.inanime_new = new inanime_new();
+$(document).ready(function ()
+{
+    $('.ia-radio-button').click(inanime_new.radioClick);
+    $('.ia-counter-container .button').click(inanime_new.counterButtonClick);
+});
