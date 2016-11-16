@@ -485,15 +485,15 @@
             <div class="row product-tabs">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Характеристики</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a></li>
+                    <li role="presentation" class="active"><a href="#characteristics" aria-controls="characteristics" role="tab" data-toggle="tab">Характеристики</a></li>
+                    <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Отзывы</a></li>
                     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Доставка и гарантии</a></li>
                     <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Вопрос - ответ</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
+                    <div role="tabpanel" class="tab-pane active" id="characteristics">
                         <ul class="characteristic-list gray-text">
                             <li><span class="char-name">Аниме</span><span class="char-value">Infinite Stratos / Бесконечные небеса</span></li>
                             <li><span class="char-name">Издатель</span><span class="char-value">FREEing</span></li>
@@ -504,7 +504,59 @@
                         </ul>
 
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                    <div role="tabpanel" class="tab-pane" id="comments">
+                        <div class="comment-container">
+                            <div class="comment-main grey-container ">
+                                <div class="nickname-rate-container">
+                                    <div class="nicname">Иван Иванов</div>
+                                    <div class="comment-rate"></div>
+                                </div>
+                                <div class="part-title">Плюсы:</div>
+                                <div class="part-text gray-text">Большой ассортимент, качественная продукция</div>
+                                <div class="part-title">Минусы:</div>
+                                <div class="part-text gray-text">Достаточно высокие цены, из-за того, что большинство продукции - импортная<BR>
+                                    Мне давно знаком этот небольшой уютный магазинчик, располагающий в пяти минутах ходьбы от метро Технологический институт.
+                                    Я с удовольствием наблюдал как расширяется его ассортимент - от обычной продажи дисков с аниме (японской анимацией).
+                                </div>
+                                <div class="part-title">Комментарий:</div>
+                                <div class="part-text gray-text">
+                                    Достаточно высокие цены, из-за того, что большинство продукции - импортная<BR>
+                                    Мне давно знаком этот небольшой уютный магазинчик, располагающий в пяти минутах ходьбы от метро Технологический институт.
+                                    Я с удовольствием наблюдал как расширяется его ассортимент - от обычной продажи дисков с аниме (японской анимацией).
+                                </div>
+                                <div class="date-answer-container">
+                                    <div class="text gray-text">29 февраля 2016</div>
+                                    <span class="divider">|</span>
+                                    <div class="answer-button">Ответить</div>
+                                </div>
+                            </div>
+                            <div class="comment-container sub-comment">
+                                <div class="comment-main grey-container ">
+                                    <div class="nickname-rate-container">
+                                        <div class="answer-icon"></div>
+                                        <div class="nicname">Алексей Разин</div>
+                                        <div class="comment-parent-nicname">Ивану Иванову</div>
+                                    </div>
+                                    <div class="part-text gray-text">
+                                        Достаточно высокие цены, из-за того, что большинство продукции - импортная<br>
+                                        Мне давно знаком этот небольшой уютный магазинчик, располагающий в пяти минутах ходьбы от метро Технологический институт.
+                                        Я с удовольствием наблюдал как расширяется его ассортимент - от обычной продажи дисков с аниме (японской анимацией).
+                                    </div>
+                                    <div class="date-answer-container">
+                                        <div class="text gray-text">29 февраля 2016</div>
+                                        <span class="divider">|</span>
+                                        <div class="answer-button">Ответить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="btn btn-default ia-btn text-btn blue-btn" type="submit" name="OK" value="Оставить отзыв">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span>Оставить отзыв</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="messages">...</div>
                     <div role="tabpanel" class="tab-pane" id="settings">...</div>
                 </div>

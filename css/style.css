@@ -1115,6 +1115,88 @@ nav.navigation .third-level-container li{
     .product-tabs .tab-content .tab-pane:first-child {
         border-top-left-radius:0px;
     }
+#comments .comment-main {
+    margin-bottom: 15px;
+}
+#comments  .comment-container.sub-comment {
+    margin-left: 35px;
+}
+#comments .comment-main{
+    padding: 30px 38px;
+}
+#comments .comment-main .nickname-rate-container .nicname{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#comments .comment-main .nickname-rate-container {
+    /*margin-bottom: 20px;*/
+}
+#comments .comment-main .part-title{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+#comments .comment-main .part-text{
+    line-height: 17px;
+}
+#comments .date-answer-container .text,
+#comments .date-answer-container .answer-button,
+#comments .comment-main .nickname-rate-container .answer-icon,
+#comments .comment-main .nickname-rate-container .nicname,
+#comments .comment-main .nickname-rate-container .comment-parent-nicname{
+    display: inline-block;
+}
+#comments .date-answer-container .answer-button{
+    margin-top: 22px;
+}
+#comments .comment-main .nickname-rate-container .comment-parent-nicname{
+    color:#bbbbbb;
+    font-style: italic;
+}
+#comments .comment-main .nickname-rate-container > div{
+    margin-right: 10px;
+}
+#comments .comment-main .nickname-rate-container .answer-icon{
+    width: 22px;
+    height: 21px;
+    background: url(../images/comment-icon-answer.png) no-repeat;
+    vertical-align: text-bottom;
+}
+#comments .comment-main .date-answer-container{
+    font-size: 13px;
+}
+#comments .comment-main .date-answer-container .divider{
+    margin: 0 5px;
+}
+#comments .comment-main .date-answer-container .answer-button{
+    color:#63bac4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#comments .comment-main .date-answer-container .answer-button:hover{
+    text-decoration: none;
+}
+#comments .comment-container .button-container{
+    text-align: center;
+}
+#comments .comment-container .button-container .blue-btn{
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 9px 19px;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+#comments .comment-container .button-container button>i{
+    font-size: 22px;
+}
+#comments .comment-container .button-container button > span{
+    vertical-align: text-bottom;
+}
+#comments .comment-container.sub-comment .nickname-rate-container{
+    margin-bottom: 20px;
+}
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
