@@ -1112,9 +1112,55 @@ nav.navigation .third-level-container li{
     border-radius:10px;
     padding: 30px 27px;
 }
-    .product-tabs .tab-content .tab-pane:first-child {
-        border-top-left-radius:0px;
+.product-tabs .tab-content .tab-pane:first-child {
+    border-top-left-radius:0px;
+}
+
+.product-tabs .tab-content #shipping .text-title {
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.product-tabs .tab-content #shipping ul {
+    list-style:none;
+    padding-left: 10px;
+    margin-top: 26px;
+    margin-bottom: 25px;
+}
+.product-tabs .tab-content #shipping ul li {
+    margin-bottom:4px;
+}
+.product-tabs .tab-content #shipping p{
+    padding-left: 10px;
+    margin-top: 25px;
+}
+    .product-tabs .tab-content #questions .question-text {
+        color: #5d3d1d;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        border-bottom: 2px dotted #5d3d1d;
+        cursor:pointer;
     }
+    .product-tabs .tab-content #questions .question-title {
+        margin-bottom: 26px;
+        padding-left: 10px;
+    }
+    .product-tabs .tab-content #questions .question-text.active,
+    .product-tabs .tab-content #questions .question-text:hover {
+        border-bottom:2px dotted transparent;
+    }
+    .product-tabs .tab-content #questions .question-container .question-answer {
+        display:none;
+        padding-left: 27px;
+        padding-bottom: 33px;
+    }
+    .product-tabs .tab-content #questions .question-container.opened .question-answer{
+        display:block;
+    }
+/**************** COMMNETS ***********************/
 #comments .comment-main {
     margin-bottom: 15px;
 }
@@ -1197,6 +1243,7 @@ nav.navigation .third-level-container li{
 #comments .comment-container.sub-comment .nickname-rate-container{
     margin-bottom: 20px;
 }
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -1850,7 +1897,7 @@ footer .general-container{
     .review-container .review-info {
         margin-bottom: 0px;
     }
-    .view-all-btn {;
+    .view-all-btn {
         padding: 6px 15px;
     }
 

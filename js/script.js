@@ -151,10 +151,19 @@ function inanime_new() {
             if (input.val() > 1) input.val(parseInt(input.val()) - 1);
         }
     }
+
+    this.questionClick = function ()
+    {
+        var questionTitle = $(this);
+        var qustionContainer = questionTitle.closest('.question-container');
+        if (qustionContainer.hasClass('opened')) qustionContainer.removeClass('opened');
+        else qustionContainer.addClass('opened');
+    }
 }
 window.inanime_new = new inanime_new();
 $(document).ready(function ()
 {
     $('.ia-radio-button').click(inanime_new.radioClick);
     $('.ia-counter-container .button').click(inanime_new.counterButtonClick);
+    $('#questions .question-answer-section-container .question-title').click(inanime_new.questionClick);
 });
