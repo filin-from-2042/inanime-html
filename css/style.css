@@ -1841,7 +1841,7 @@ footer .general-container{
 		top:0;
 	}
 }
-@media (min-width: 992px) and (max-width: 1240px)
+@media (min-width: 992px) and (max-width: 1230px)
 {
     input.form-control.search-input{
         width: 257px;
@@ -1904,7 +1904,7 @@ footer .general-container{
 
 }
  /* Large devices (large desktops, 1200px and up) */
- @media (min-width: 1200px){ 
+ @media (min-width: 1230px){
 	nav.navigation ul.second-level > li.dropdown:hover  div.third-level-container.last{
 		width:118%;
 	}
