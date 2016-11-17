@@ -1841,7 +1841,7 @@ footer .general-container{
 		top:0;
 	}
 }
-@media (min-width: 992px) and (max-width: 1200px)
+@media (min-width: 992px) and (max-width: 1240px)
 {
     input.form-control.search-input{
         width: 257px;
@@ -1912,3 +1912,6 @@ footer .general-container{
 	    margin-left: 22px;
     }
  }
+/*@media (min-width: 1240px) {
+    .container{width:1240px}
+}*/
