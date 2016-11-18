@@ -131,7 +131,8 @@ function inanime_new() {
 
     this.radioClick = function (event)
     {
-        var radioButton = $(this);
+        if ($(this).hasClass('ia-radio-button')) var radioButton = $(this);
+        else var radioButton = $(this).closest('.radio-button-container').find('.ia-radio-button');
         radioButton.closest('.radio-container').find('input.ia-radio-value').val(radioButton.find('span.value.hidden').text());        
         radioButton.closest('.radio-container').find('.ia-radio-button').removeClass('active');
         radioButton.addClass('active');
@@ -139,7 +140,7 @@ function inanime_new() {
 
     this.counterButtonClick = function ()
     {
-        var button = $(this);
+        button = $(this)
         var counterContainer = button.closest('.ia-counter-container');
         var input = counterContainer.find('input.counter-value');
         if(button.hasClass('increase'))
@@ -163,7 +164,7 @@ function inanime_new() {
 window.inanime_new = new inanime_new();
 $(document).ready(function ()
 {
-    $('.ia-radio-button').click(inanime_new.radioClick);
+    $('.ia-radio-button,.radio-button-container .button-title').click(inanime_new.radioClick);
     $('.ia-counter-container .button').click(inanime_new.counterButtonClick);
     $('#questions .question-answer-section-container .question-title').click(inanime_new.questionClick);
 });

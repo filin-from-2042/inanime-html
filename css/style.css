@@ -113,16 +113,45 @@ input.form-control{
 	background-color:rgb(242,242,236);
 }
 /******** IMAGE RADIO BUTTON **************/
+.radio-container .radio-button-container {
+    display:inline-block;
+}
 .ia-radio-button {    
     display:inline-block;    
     border:2px solid rgb(218,218,218);
     color:rgb(218,218,218);
     width:33px;
     height:33px;
-}
-.image-radio {
     border-radius:20px;
     padding:3px
+}
+.ia-radio-button .radio-dot {
+    width: 23px;
+    height: 23px;
+    background-color: #5d3d1d;
+    border-radius: 20px;
+    display:none;
+}
+.radio-button-container .button-title,
+.radio-button-container .ia-radio-button {
+    vertical-align:middle;
+}
+.radio-button-container .button-title {
+    display:inline-block;
+    cursor:pointer;
+    color:#79828b;
+    padding-left: 6px;
+}
+.ia-radio-button.active .radio-dot {
+    display:block;    
+}
+.ia-radio-button.small {
+    width: 24px;
+    height: 24px;
+}
+.ia-radio-button.small .radio-dot {
+    width: 14px;
+    height: 14px;
 }
 .image-radio:hover,
 .size-radio:hover {
@@ -150,6 +179,14 @@ input.form-control{
 .yellow-text{
     color: #e89638;
     letter-spacing: 1.1px;
+}
+.yellow-text-underline {
+    color: #fc9a00;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.yellow-text-underline:hover {
+    text-decoration:none;
 }
 .gray-text{
     color:#79828b;
@@ -1269,23 +1306,117 @@ nav.navigation .third-level-container li{
 
 
 /******************************** PERSONAL **************************************/
+.section-personal {
+     padding-top: 158px;
+    padding-bottom: 100px;
+
+}
+.section-personal .menu-column {
+    padding-left:0;
+}
 .section-personal .menu-container{
     border-radius: 10px;
     background-color: #63bac4;
+    width:256px;
 }
 .section-personal .menu-container ul{
     list-style: none;
     margin: 0;
     padding: 0;
     color:#fff;
+    padding: 9px 0 10px 10px;
 }
+    .section-personal .menu-container ul li {
+        margin-bottom:5px;
+    }
 .section-personal .menu-container ul li a{
     display: inline-block;
+    width:100%;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    color:#fff;    
+    padding: 5px 5px 5px 17px;
+    font-size: 15px;
+    letter-spacing: 0px;
 }
+    .section-personal .menu-container ul li a:hover {
+        text-decoration:none;
+        color:#000;
+    }
 .section-personal .menu-container ul li.active a,
 .section-personal .menu-container ul li:hover a{
     background-color: #f2f2ec;
+        color:#000;
 }
+    .section-personal .fields-column {
+        padding-top:13px;
+    }
+    .section-personal .fields-column input{
+        font-size: 13px;        
+    }
+    .section-personal .fields-column .input-container {
+        margin-bottom:23px;
+        margin-right: 7px;
+    }
+    .section-personal .fields-column .save-button-container {
+        margin-top: 30px;
+    }
+    .section-personal .fields-column .save-button-container button {
+        font-size: 14px;
+        padding: 11px 32px;
+    }
+
+    .section-personal .fio-column .input-container input {
+        width:354px;
+    }
+    .section-personal .fio-column .radio-container {
+        padding-left: 15px;
+        padding-top: 2px;
+    }
+    .section-personal .fio-column .radio-container .radio-button-container {
+        margin-right: 17px;
+    }
+    
+    .section-personal .address-column {
+        padding-left:27px;
+    }
+    .section-personal .address-column input.city-input {
+        width:505px;
+    }
+    .section-personal .address-column input.street-input {
+        width: 295px;
+    }
+    .section-personal .address-column input.house-number-input ,
+    .section-personal .address-column input.apartment-input {
+        width: 95px;
+    }
+    .section-personal .address-column .street-data-fields {
+        width:110%;
+    }
+    .section-personal .address-column .street-data-fields .input-container {
+        display:inline-block;
+        margin-bottom: 18px;
+    }
+    .section-personal .address-column .add-button-container {
+        padding-left: 17px;
+    }
+    .section-personal .address-column .add-button.address i,
+    .section-personal .address-column .add-button.phone i {
+        font-size: 18px;
+        margin-right: 6px;
+    }
+    .section-personal .address-column .phone-container {
+        margin-top: 24px;
+    }
+    .section-personal .address-column .phone-container .input-container {
+        margin-bottom:15px;
+    }
+    .section-personal .address-column .phone-container .add-button-container {
+        padding-left: 26px;
+    }
+    .section-personal .address-column .add-button.phone i{
+        vertical-align: middle;
+    }
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -1749,6 +1880,44 @@ footer .general-container{
     #comments .comment-main .nickname-rate-container {
         text-align:center;
     }
+
+    /***************** PERSONAL PROFILE *******************/
+    .section-personal .menu-container {
+        border-radius: 10px;
+        background-color: #63bac4;
+        width: auto;
+    }
+    .section-personal .menu-column {
+         padding-left: 15px; 
+    }
+    .section-personal {
+        padding-top: 103px;
+    }
+    .section-personal .menu-column {
+        margin-bottom: 19px;
+    }
+    .section-personal .fio-column .input-container input {
+        width: 290px;
+    }
+    .section-personal .fio-column .radio-container {
+        padding-left: 23px;
+    }
+    .section-personal .address-column {
+        padding-left: 16px;
+        margin-top: 25px;
+    }
+    .section-personal .address-column input.city-input,
+    .section-personal .address-column input.street-input,
+    .section-personal .fields-column input {
+        width: 290px;
+    }
+    .section-personal .address-column input.house-number-input, .section-personal .address-column input.apartment-input {
+        width: 139px;
+    }
+    .section-personal .address-column .street-data-fields .input-container {
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Tablet */
@@ -2073,6 +2242,48 @@ footer .general-container{
     #comments .comment-main .part-title {
         margin-top: 17px;
     }
+
+    /******************* PERSONAL PROFILE  ********************/
+    .section-personal .menu-column {
+         padding-left: 23px;
+        padding-right: 11px; 
+    }
+    .section-personal .menu-container {
+         width: auto; 
+    }
+    .section-personal {
+        padding-top: 138px;
+    }
+    .section-personal .fields-column {
+       padding-top: 0px;
+    }
+    .section-personal .fields-column .input-container {
+        margin-bottom: 22px;
+    }
+    .section-personal .fio-column .radio-container {
+        padding-left: 17px;
+        padding-top: 3px;
+    }
+    .section-personal .address-column {
+        padding-left: 12px; 
+        margin-top: 26px;
+    }
+    .section-personal .address-column input.city-input {
+        width: 460px;
+    }
+    .section-personal .address-column input.street-input {
+        width: 270px;
+    }
+    .section-personal .address-column input.house-number-input,
+    .section-personal .address-column input.apartment-input {
+        width: 85px;
+    }
+    .section-personal .fields-column .save-button-container {
+        margin-top: 36px;
+    }
+    .section-personal .menu-container ul li a {
+        padding: 5px 5px 5px 3px;
+    }
 	
  }
 /* (desktops, 992px and up) */
@@ -2175,6 +2386,27 @@ footer .general-container{
     .product-info .counter-button-container .buttons-container {
         margin-left: 5px;
     }
+
+    /****************** PERSONAL - PROFILE *********************/
+    .section-personal .fio-column .input-container input {
+        width: 290px;
+    }
+    .section-personal .address-column input.city-input {
+        width: 370px;
+    }
+    .section-personal .address-column input.street-input {
+        width: 197px;
+    }
+    .section-personal .address-column input.house-number-input, .section-personal .address-column input.apartment-input {
+        width: 75px;
+    }
+    .section-personal .menu-container {
+        width: 100%;
+    }
+    .radio-button-container .button-title {
+        padding-left: 2px;
+    }
+
 }
  /* Large devices (large desktops, 1200px and up) */
  @media (min-width: 1230px){
