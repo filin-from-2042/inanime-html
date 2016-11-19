@@ -1358,10 +1358,14 @@ nav.navigation .third-level-container li{
         margin-bottom:23px;
         margin-right: 7px;
     }
-    .section-personal .fields-column .save-button-container {
+    .section-personal .fields-column .save-button-container{
         margin-top: 30px;
     }
-    .section-personal .fields-column .save-button-container button {
+     .section-personal .fields-column .add-address-button-container{
+         margin-top: 8px;
+     }
+    .section-personal .fields-column .save-button-container button ,
+    .section-personal .fields-column .add-address-button-container button {
         font-size: 14px;
         padding: 11px 32px;
     }
@@ -1398,7 +1402,7 @@ nav.navigation .third-level-container li{
         margin-bottom: 18px;
     }
     .section-personal .address-column .add-button-container {
-        padding-left: 17px;
+        padding-left: 48px;
     }
     .section-personal .address-column .add-button.address i,
     .section-personal .address-column .add-button.phone i {
@@ -1416,6 +1420,22 @@ nav.navigation .third-level-container li{
     }
     .section-personal .address-column .add-button.phone i{
         vertical-align: middle;
+    }
+    .section-personal .address-column .address-radio-container .input-container{
+        margin-bottom: 0;
+        min-height: 30px;
+        min-width: 400px;
+    }
+    .section-personal .address-column .address-radio-container input[disabled]{
+        cursor: pointer;
+        width: 475px;
+        position: absolute;
+    }
+    .section-personal .address-column .address-radio-container .radio-button-container{
+        margin-bottom: 23px;
+    }
+    .section-personal .address-column .address-radio-container .radio-button-container:last-child{
+        margin-bottom: 18px;
     }
 /******************************** FOOTER **************************************/
 footer .about .row{
