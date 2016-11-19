@@ -222,6 +222,79 @@ input.form-control{
 .ia-counter-container .button.decrease {
     left:0px;
 }
+/******************************* CUSTOM INANIME CHECKBOX *******************/
+
+.ia-checkbox [type="checkbox"]:not(:checked),
+.ia-checkbox [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.ia-checkbox [type="checkbox"]:not(:checked) + label,
+.ia-checkbox [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    color:#79828b;
+    font-weight: normal;
+}
+.ia-checkbox [type="checkbox"]:not(:checked) + label:before,
+.ia-checkbox [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 22px;
+    height: 22px;
+    /*border: 1px solid #aaa;*/
+    background: #d9d9d9;
+    border-radius: 5px;
+    /*box-shadow: inset 0 1px 3px rgba(0,0,0,.3);*/
+}
+.ia-checkbox [type="checkbox"]:not(:checked) + label:after,
+.ia-checkbox [type="checkbox"]:checked + label:after {
+    /*content: '✔';*/
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f00c";
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    font-size: 16px;
+    line-height: 0.8;
+    color: #5d3d1d;
+     transition: all .2s;
+}
+.ia-checkbox [type="checkbox"]:checked + label:after {
+     opacity: 1;
+     transform: scale(1);
+ }
+.ia-checkbox [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* disabled checkbox */
+.ia-checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
+.ia-checkbox [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+.ia-checkbox [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+.ia-checkbox [type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+/* accessibility */
+.ia-checkbox [type="checkbox"]:checked:focus + label:before,
+.ia-checkbox [type="checkbox"]:not(:checked):focus + label:before {
+    border: 1px dotted #5d3d1d;
+}
+
+/* hover style just for information */
+.ia-checkbox label:hover:before {
+    border: 1px solid #5d3d1d!important;
+}
 /******************************* HEADER ***********************************/
 header{
     padding-top: 30px;
@@ -1305,7 +1378,8 @@ nav.navigation .third-level-container li{
 }
 
 
-/******************************** PERSONAL **************************************/
+/******************************** PROFILE **************************************/
+/******************** PERSONAL ************************/
 .section-personal {
      padding-top: 158px;
     padding-bottom: 100px;
@@ -1446,6 +1520,32 @@ nav.navigation .third-level-container li{
     .section-personal .address-column .address-radio-container .radio-button-container:last-child{
         margin-bottom: 18px;
     }
+
+    /********************* CHANGE PASSWORD *******************/
+    .section-personal.change-password h2{
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px;
+    }
+    .section-personal.change-password .password-column {
+        padding-left: 5px;
+        padding-top: 8px;
+    }
+    .section-personal.change-password .password-column input{
+        width: 434px;
+    }
+    .section-personal.change-password  .password-column .change-button-container button{
+        padding: 11px 35px;
+        font-size: 14px;
+    }
+    .section-personal.change-password .confirm-column .confirm-container{
+        margin-top: 5px;
+        margin-left: 3px;
+    }
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -1956,6 +2056,27 @@ footer .general-container{
     .section-personal .address-column .address-radio-container input[disabled]{
         width: 250px;
     }
+
+    /*************** PERSONAL CHANGE PASSWORD ****************/
+    .section-personal.change-password h2 {
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+    .section-personal.change-password .password-column input {
+        width: 291px;
+    }
+    .section-personal.change-password .password-column {
+        padding-left: 16px;
+    }
+    .section-personal.change-password .password-column .change-button-container{
+        text-align: center;
+        margin-top: 32px;
+    }
+    .section-personal.change-password .confirm-column .confirm-container {
+        margin-top: 22px;
+    }
 }
 
 /* Tablet */
@@ -2331,7 +2452,25 @@ footer .general-container{
     .section-personal .address-column .address-radio-container input[disabled]{
         width: 330px;
     }
-	
+
+    /*************************** PERSONAL - CHANGE PASSWORD *****************/
+    .section-personal.change-password .password-column {
+         padding-top: 0px;
+    }
+    .section-personal.change-password h2 {
+        margin-top: 6px;
+        padding-left: 0px;
+    }
+    .section-personal.change-password .password-column .change-button-container{
+        margin-top: 33px;
+    }
+    .section-personal.change-password .confirm-column .confirm-container {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+    .section-personal.change-password .password-column {
+        padding-left: 13px;
+    }
  }
 /* (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -2458,6 +2597,11 @@ footer .general-container{
     }
     .section-personal .address-column .address-radio-container input[disabled]{
         width: 340px;
+    }
+
+    /****************************** PERSONAL - CHANGE PASSWORD ******************/
+    .section-personal.change-password .password-column input {
+        width: 345px;
     }
 
 }
