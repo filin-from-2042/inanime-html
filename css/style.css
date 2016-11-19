@@ -1319,6 +1319,15 @@ nav.navigation .third-level-container li{
     background-color: #63bac4;
     width:256px;
 }
+.section-personal .menu-container .fox-icon{
+    background: url(../images/sections-new-fox-top-desktop.png) no-repeat;
+    width: 169px;
+    height: 91px;
+    z-index: 100;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 39px;
+}
 .section-personal .menu-container ul{
     list-style: none;
     margin: 0;
@@ -1938,6 +1947,15 @@ footer .general-container{
         margin-bottom: 20px;
     }
 
+    .section-personal .menu-container .fox-icon{
+        display: none;
+    }
+    .section-personal .address-column .address-radio-container .input-container{
+        min-width: 240px;
+    }
+    .section-personal .address-column .address-radio-container input[disabled]{
+        width: 250px;
+    }
 }
 
 /* Tablet */
@@ -2304,6 +2322,15 @@ footer .general-container{
     .section-personal .menu-container ul li a {
         padding: 5px 5px 5px 3px;
     }
+    .section-personal .menu-container .fox-icon{
+        margin-left: 32px
+    }
+    .section-personal .address-column .address-radio-container .input-container{
+        min-width: 320px;
+    }
+    .section-personal .address-column .address-radio-container input[disabled]{
+        width: 330px;
+    }
 	
  }
 /* (desktops, 992px and up) */
@@ -2425,6 +2452,12 @@ footer .general-container{
     }
     .radio-button-container .button-title {
         padding-left: 2px;
+    }
+    .section-personal .address-column .address-radio-container .input-container{
+        min-width: 330px;
+    }
+    .section-personal .address-column .address-radio-container input[disabled]{
+        width: 340px;
     }
 
 }
