@@ -188,6 +188,14 @@ input.form-control{
 .yellow-text-underline:hover {
     text-decoration:none;
 }
+.light-blue-text-underline {
+     color: #63bac4;
+     text-decoration:underline;
+     cursor:pointer;
+ }
+.light-blue-text-underline:hover {
+    text-decoration:none;
+}
 .gray-text{
     color:#79828b;
 }
@@ -1248,7 +1256,8 @@ nav.navigation .third-level-container li{
     padding-left: 10px;
     margin-top: 25px;
 }
-.product-tabs .tab-content #questions .question-text {
+/***************** QUESTIONS ******************/
+#questions .question-text {
     color: #5d3d1d;
     font-weight: bold;
     font-size: 16px;
@@ -1256,23 +1265,24 @@ nav.navigation .third-level-container li{
     border-bottom: 2px dotted #5d3d1d;
     cursor:pointer;
 }
-.product-tabs .tab-content #questions .question-title {
+ #questions .question-title {
     margin-bottom: 26px;
     padding-left: 10px;
 }
-.product-tabs .tab-content #questions .question-text.active,
-.product-tabs .tab-content #questions .question-text:hover {
+ #questions .question-text.active,
+ #questions .question-text:hover {
     border-bottom:2px dotted transparent;
 }
-.product-tabs .tab-content #questions .question-container .question-answer {
+ #questions .question-container .question-answer {
     display:none;
     padding-left: 27px;
     padding-bottom: 33px;
 }
-.product-tabs .tab-content #questions .question-container.opened .question-answer{
+#questions .question-container.opened .question-answer{
     display:block;
 }
 
+#questions .question-btn ,
 .product-tabs .button-container .question-btn {
     text-transform: uppercase;
     font-size: 14px;
@@ -1281,6 +1291,7 @@ nav.navigation .third-level-container li{
     border-radius: 10px;
 }
 
+#questions  .question-btn .icon-question ,
 .product-tabs .button-container .question-btn .icon-question {
     display:inline-block;
     width:21px;
@@ -1293,6 +1304,20 @@ nav.navigation .third-level-container li{
 .product-tabs .button-container {
     text-align:center;
 }
+#questions .question-container .product-link-container{
+    padding-left: 10px;
+    margin-bottom: 26px;
+    margin-top: -14px;
+    font-size: 12px;
+}
+#questions .question-container .product-link-container .text{
+    margin-right: 5px;
+}
+#questions .question-container .product-link-container .product-link:before,
+#questions .question-container .product-link-container .product-link:after{
+    content:'"';
+}
+
 /**************** COMMENTS ***********************/
 #comments .comment-main {
     margin-bottom: 15px;
@@ -1422,129 +1447,140 @@ nav.navigation .third-level-container li{
     font-size: 15px;
     letter-spacing: 0px;
 }
-    .section-personal .menu-container ul li a:hover {
-        text-decoration:none;
-        color:#000;
-    }
+.section-personal .menu-container ul li a:hover {
+    text-decoration:none;
+    color:#000;
+}
 .section-personal .menu-container ul li.active a,
 .section-personal .menu-container ul li:hover a{
     background-color: #f2f2ec;
         color:#000;
 }
-    .section-personal .fields-column {
-        padding-top:13px;
-    }
-    .section-personal .fields-column input{
-        font-size: 13px;        
-    }
-    .section-personal .fields-column .input-container {
-        margin-bottom:23px;
-        margin-right: 7px;
-    }
-    .section-personal .fields-column .save-button-container{
-        margin-top: 30px;
-    }
-     .section-personal .fields-column .add-address-button-container{
-         margin-top: 8px;
-     }
-    .section-personal .fields-column .save-button-container button ,
-    .section-personal .fields-column .add-address-button-container button {
-        font-size: 14px;
-        padding: 11px 32px;
-    }
+.section-personal .fields-column {
+    padding-top:13px;
+}
+.section-personal .fields-column input{
+    font-size: 13px;
+}
+.section-personal .fields-column .input-container {
+    margin-bottom:23px;
+    margin-right: 7px;
+}
+.section-personal .fields-column .save-button-container{
+    margin-top: 30px;
+}
+ .section-personal .fields-column .add-address-button-container{
+     margin-top: 8px;
+ }
+.section-personal .fields-column .save-button-container button ,
+.section-personal .fields-column .add-address-button-container button {
+    font-size: 14px;
+    padding: 11px 32px;
+}
 
-    .section-personal .fio-column .input-container input {
-        width:354px;
-    }
-    .section-personal .fio-column .radio-container {
-        padding-left: 15px;
-        padding-top: 2px;
-    }
-    .section-personal .fio-column .radio-container .radio-button-container {
-        margin-right: 17px;
-    }
-    
-    .section-personal .address-column {
-        padding-left:27px;
-    }
-    .section-personal .address-column input.city-input {
-        width:505px;
-    }
-    .section-personal .address-column input.street-input {
-        width: 295px;
-    }
-    .section-personal .address-column input.house-number-input ,
-    .section-personal .address-column input.apartment-input {
-        width: 95px;
-    }
-    .section-personal .address-column .street-data-fields {
-        width:110%;
-    }
-    .section-personal .address-column .street-data-fields .input-container {
-        display:inline-block;
-        margin-bottom: 18px;
-    }
-    .section-personal .address-column .add-button-container {
-        padding-left: 48px;
-    }
-    .section-personal .address-column .add-button.address i,
-    .section-personal .address-column .add-button.phone i {
-        font-size: 18px;
-        margin-right: 6px;
-    }
-    .section-personal .address-column .phone-container {
-        margin-top: 24px;
-    }
-    .section-personal .address-column .phone-container .input-container {
-        margin-bottom:15px;
-    }
-    .section-personal .address-column .phone-container .add-button-container {
-        padding-left: 26px;
-    }
-    .section-personal .address-column .add-button.phone i{
-        vertical-align: middle;
-    }
-    .section-personal .address-column .address-radio-container .input-container{
-        margin-bottom: 0;
-        min-height: 30px;
-        min-width: 400px;
-    }
-    .section-personal .address-column .address-radio-container input[disabled]{
-        cursor: pointer;
-        width: 475px;
-        position: absolute;
-    }
-    .section-personal .address-column .address-radio-container .radio-button-container{
-        margin-bottom: 23px;
-    }
-    .section-personal .address-column .address-radio-container .radio-button-container:last-child{
-        margin-bottom: 18px;
-    }
+.section-personal .fio-column .input-container input {
+    width:354px;
+}
+.section-personal .fio-column .radio-container {
+    padding-left: 15px;
+    padding-top: 2px;
+}
+.section-personal .fio-column .radio-container .radio-button-container {
+    margin-right: 17px;
+}
 
-    /********************* CHANGE PASSWORD *******************/
-    .section-personal.change-password h2{
-        margin-top: 0;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-        margin-bottom: 25px;
-    }
-    .section-personal.change-password .password-column {
-        padding-left: 5px;
-        padding-top: 8px;
-    }
-    .section-personal.change-password .password-column input{
-        width: 434px;
-    }
-    .section-personal.change-password  .password-column .change-button-container button{
-        padding: 11px 35px;
-        font-size: 14px;
-    }
-    .section-personal.change-password .confirm-column .confirm-container{
-        margin-top: 5px;
-        margin-left: 3px;
-    }
+.section-personal .address-column {
+    padding-left:27px;
+}
+.section-personal .address-column input.city-input {
+    width:505px;
+}
+.section-personal .address-column input.street-input {
+    width: 295px;
+}
+.section-personal .address-column input.house-number-input ,
+.section-personal .address-column input.apartment-input {
+    width: 95px;
+}
+.section-personal .address-column .street-data-fields {
+    width:110%;
+}
+.section-personal .address-column .street-data-fields .input-container {
+    display:inline-block;
+    margin-bottom: 18px;
+}
+.section-personal .address-column .add-button-container {
+    padding-left: 48px;
+}
+.section-personal .address-column .add-button.address i,
+.section-personal .address-column .add-button.phone i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+.section-personal .address-column .phone-container {
+    margin-top: 24px;
+}
+.section-personal .address-column .phone-container .input-container {
+    margin-bottom:15px;
+}
+.section-personal .address-column .phone-container .add-button-container {
+    padding-left: 26px;
+}
+.section-personal .address-column .add-button.phone i{
+    vertical-align: middle;
+}
+.section-personal .address-column .address-radio-container .input-container{
+    margin-bottom: 0;
+    min-height: 30px;
+    min-width: 400px;
+}
+.section-personal .address-column .address-radio-container input[disabled]{
+    cursor: pointer;
+    width: 475px;
+    position: absolute;
+}
+.section-personal .address-column .address-radio-container .radio-button-container{
+    margin-bottom: 23px;
+}
+.section-personal .address-column .address-radio-container .radio-button-container:last-child{
+    margin-bottom: 18px;
+}
+
+/********************* CHANGE PASSWORD *******************/
+.section-personal.change-password h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+.section-personal.change-password .password-column {
+    padding-left: 5px;
+    padding-top: 8px;
+}
+.section-personal.change-password .password-column input{
+    width: 434px;
+}
+.section-personal.change-password  .password-column .change-button-container button{
+    padding: 11px 35px;
+    font-size: 14px;
+}
+.section-personal.change-password .confirm-column .confirm-container{
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+/****************************** PROFILE ANSWERS QUESTIONS ***********************/
+.section-personal.answers-questions .answers-questions-column{
+    padding: 0;
+    padding-top: 7px;
+}
+.section-personal.answers-questions .answers-questions-column #questions{
+    border: 2px solid #5d3d1d;
+    border-radius: 10px;
+    padding: 30px 28px;
+}
 
 /******************************** FOOTER **************************************/
 footer .about .row{
@@ -2077,6 +2113,15 @@ footer .general-container{
     .section-personal.change-password .confirm-column .confirm-container {
         margin-top: 22px;
     }
+    .section-personal.answers-questions .answers-questions-column {
+        padding: 10px 15px 0;
+    }
+    .section-personal.answers-questions .answers-questions-column #questions {
+        padding: 20px 3px;
+    }
+    #questions .question-container .product-link-container {
+        margin-bottom: 8px;
+    }
 }
 
 /* Tablet */
@@ -2470,6 +2515,16 @@ footer .general-container{
     }
     .section-personal.change-password .password-column {
         padding-left: 13px;
+    }
+
+    /******************************** PERSONAL - ANSWERS QUESTIONS *******************/
+    .section-personal.answers-questions .answers-questions-column {
+        padding-left: 10px;
+        padding-top: 0px;
+        padding-right: 27px;
+    }
+    #questions .question-container .product-link-container {
+        margin-bottom: 8px;
     }
  }
 /* (desktops, 992px and up) */
