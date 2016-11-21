@@ -1660,27 +1660,27 @@ nav.navigation .third-level-container li{
         padding: 8px 9px 3px;
         border-radius: 7px;
     }
-    .section-personal.orders .table-row .order-number-column,
-    .section-personal.orders .table-row .count-column  {
+    .section-personal.orders .table-row .general-data-container .order-number-column,
+    .section-personal.orders .table-row .general-data-container .count-column  {
         padding-top:17px;
         padding-bottom:12px;
     }
-        .section-personal.orders .table-row .count-column {
+        .section-personal.orders .table-row .general-data-container .count-column {
             padding-left: 40px;
         }
-    .section-personal.orders .table-row .order-date-column {
+    .section-personal.orders .table-row .general-data-container .order-date-column {
         padding-left: 10px;
         padding-top: 18px;
         padding-bottom: 12px;
     }
-    .section-personal.orders .table-row .price-column,
-    .section-personal.orders .table-row .shipping-column {
+    .section-personal.orders .table-row .general-data-container .price-column,
+    .section-personal.orders .table-row .general-data-container .shipping-column {
         padding-top: 10px;
     }
-    .section-personal.orders .table-row .price-column {
+    .section-personal.orders .table-row .general-data-container .price-column {
         padding-left: 3px;        
     }
-    .section-personal.orders .table-row .shipping-column {
+    .section-personal.orders .table-row .general-data-container .shipping-column {
         padding-left: 10px;
     }
 
@@ -1697,6 +1697,7 @@ nav.navigation .third-level-container li{
         margin:0;
         padding:0;
         list-style:none;
+        padding-left: 20px;
     }
     .section-personal.orders .table-row .more-data-container .brown-text {
         color: #5d3d1d;
@@ -1718,6 +1719,39 @@ nav.navigation .third-level-container li{
     }
     .section-personal.orders .table-row.opened .pay-btn {
         display:none;
+    }
+    .section-personal.orders .more-data-container .price-column{
+        padding-left: 25px;
+        padding-top: 5px;
+    }
+    .section-personal.orders .more-data-container .data-list{
+        padding: 30px 0px 0 37px;
+    }
+    .section-personal.orders .more-data-container .data-list .title{
+        font-weight: bold;
+    }
+    .section-personal.orders .more-data-container .data-list .value{
+        padding-left: 0px;
+        text-align: left;
+    }
+    .section-personal.orders .more-data-container .product-name-column,
+    .section-personal.orders .more-data-container .count-column{
+        padding-top: 7px;
+    }
+    .section-personal.orders .more-data-container .count-column{
+        padding-left: 28px;
+    }
+    .section-personal.orders .more-data-container .controls-buttons-column{
+        text-align: right;
+    }
+    .section-personal.orders .table-row.opened .controls-buttons-column {
+        padding-right: 11px;
+        text-align: right;
+        padding-top: 8px;
+    }
+    .section-personal.orders .table-row.opened .option-btn{
+        border:2px solid #5d3d1d;
+        padding: 7px 7px 0px;
     }
 
 
