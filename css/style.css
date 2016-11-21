@@ -1698,27 +1698,27 @@ nav.navigation .third-level-container li{
         padding:0;
         list-style:none;
     }
-        .section-personal.orders .table-row .more-data-container .brown-text {
-            color: #5d3d1d;
-            font-weight: bold;
-            font-size: 16px;
-            letter-spacing: 0.5px;
-        }
+    .section-personal.orders .table-row .more-data-container .brown-text {
+        color: #5d3d1d;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
         
-        .section-personal.orders .table-row.opened {
-            border:2px solid #5d3d1d;
-            border-radius:10px;
-            margin: 7px -5px;
-            padding-top: 4px;
-        }
-            .section-personal.orders .table-row.opened .order-number{
-                margin-left: 6px;
-                border-bottom:2px dotted transparent;
-                cursor:default;
-            }
-        .section-personal.orders .table-row.opened .pay-btn {
-            display:none;
-        }
+    .section-personal.orders .table-row.opened {
+        border:2px solid #5d3d1d;
+        border-radius:10px;
+        margin: 7px -5px;
+        padding-top: 4px;
+    }
+    .section-personal.orders .table-row.opened .order-number{
+        margin-left: 6px;
+        border-bottom:2px dotted transparent;
+        cursor:default;
+    }
+    .section-personal.orders .table-row.opened .pay-btn {
+        display:none;
+    }
 
 
 /******************************** FOOTER **************************************/
