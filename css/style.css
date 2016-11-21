@@ -199,6 +199,17 @@ input.form-control{
 .gray-text{
     color:#79828b;
 }
+.brown-dotted-text {
+    color: #5d3d1d;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px dotted #5d3d1d;
+    cursor: pointer;
+}
+.brown-dotted-text:hover {
+    border-bottom: 2px dotted transparent;
+}
 /********************************* COUNTER TEXT INPUT ****************************************/
 .ia-counter-container{
     display:inline-block;  
@@ -1608,6 +1619,107 @@ nav.navigation .third-level-container li{
     .section-personal.discount .card-column .card-container    {
         border-radius: 10px;
     }
+
+/******************************* PROFILE ORDERS *****************************/
+    .section-personal.orders .orders-table-column .table-header .title {
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 55px;
+    }
+    .section-personal.orders .orders-table-column .table-header {
+        border-radius:10px;
+        margin-bottom:14px;
+    }
+    .section-personal.orders .orders-table-column .table-header .order-number-column {
+        text-align:center;
+    }
+    .section-personal.orders  .orders-table-column  {
+        padding-top: 0px;
+    }
+    .section-personal.orders .table-row {
+        /*padding: 12px 0px;*/
+    }
+    .section-personal.orders .table-row .order-number{
+        margin-left: 19px;
+    }
+    .section-personal.orders .table-row .pay-btn {
+        padding: 9px 23px;
+        margin-right: 8px;
+    }
+    .section-personal.orders .table-row .repeat-btn{
+        font-size: 13px;
+        padding: 7px 10px;
+        border-radius: 7px;
+        margin-right: 8px;
+    }
+    .section-personal.orders .table-row .option-btn{
+        font-size: 15px;
+        padding: 8px 9px 3px;
+        border-radius: 7px;
+    }
+    .section-personal.orders .table-row .order-number-column,
+    .section-personal.orders .table-row .count-column  {
+        padding-top:17px;
+        padding-bottom:12px;
+    }
+        .section-personal.orders .table-row .count-column {
+            padding-left: 40px;
+        }
+    .section-personal.orders .table-row .order-date-column {
+        padding-left: 10px;
+        padding-top: 18px;
+        padding-bottom: 12px;
+    }
+    .section-personal.orders .table-row .price-column,
+    .section-personal.orders .table-row .shipping-column {
+        padding-top: 10px;
+    }
+    .section-personal.orders .table-row .price-column {
+        padding-left: 3px;        
+    }
+    .section-personal.orders .table-row .shipping-column {
+        padding-left: 10px;
+    }
+
+    .section-personal.orders .table-row .controls-buttons-column {
+        padding-top: 10px;
+        padding-left: 27px;
+    }
+    .section-personal.orders .table-row .price-column,
+    .section-personal.orders .table-row .shipping-column {
+        font-size: 20px;
+        font-weight: bold;        
+    }
+    .section-personal.orders .table-row .more-data-container ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+        .section-personal.orders .table-row .more-data-container .brown-text {
+            color: #5d3d1d;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-personal.orders .table-row.opened {
+            border:2px solid #5d3d1d;
+            border-radius:10px;
+            margin: 7px -5px;
+            padding-top: 4px;
+        }
+            .section-personal.orders .table-row.opened .order-number{
+                margin-left: 6px;
+                border-bottom:2px dotted transparent;
+                cursor:default;
+            }
+        .section-personal.orders .table-row.opened .pay-btn {
+            display:none;
+        }
+
 
 /******************************** FOOTER **************************************/
 footer .about .row{
