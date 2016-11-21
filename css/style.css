@@ -1582,6 +1582,33 @@ nav.navigation .third-level-container li{
     padding: 30px 28px;
 }
 
+/***************************** PROFILE DISCOUNT CARD **************************/
+    .section-personal.discount .fields-column {
+        padding-top:0;
+    }
+    .section-personal.discount .cards-inputs-column {
+        padding-top:13px;
+    }
+    .section-personal.discount .cards-inputs-column {
+        padding-left:5px;
+    }
+    .section-personal.discount .cards-inputs-column .form-control{
+        width:435px;
+    }
+    .section-personal.discount .cards-inputs-column .activate-button-container button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+    .section-personal.discount .cards-inputs-column .activate-button-container {
+        margin-top: 30px;
+    }
+    .section-personal.discount .card-column {
+        padding-left:0;
+    }
+    .section-personal.discount .card-column .card-container    {
+        border-radius: 10px;
+    }
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -2122,6 +2149,25 @@ footer .general-container{
     #questions .question-container .product-link-container {
         margin-bottom: 8px;
     }
+
+    /****************************** PROFILE - ACTIVATE DISCOUNT ******************/
+    .section-personal.discount .cards-inputs-column .form-control {
+        width: 290px;
+    }
+    .section-personal.discount .cards-inputs-column {
+        padding-left: 14px;
+    }
+    .section-personal.discount .cards-inputs-column .activate-button-container {
+        text-align: center;
+    }
+    .section-personal.discount .card-column .card-container {
+        margin-top: 33px;
+        text-align:center;
+    }
+    .section-personal.discount .card-column .card-container img {
+        width: 290px;
+        height: 177px;
+    }
 }
 
 /* Tablet */
@@ -2526,6 +2572,18 @@ footer .general-container{
     #questions .question-container .product-link-container {
         margin-bottom: 8px;
     }
+
+    /******************************** PERSONAL - DISCOUNT ACTIVATE ****************/
+    .section-personal.discount .cards-inputs-column {
+         padding-left: 13px; 
+    }
+    .section-personal.discount .cards-inputs-column {
+         padding-top: 0px; 
+    }
+    .section-personal.discount .card-column .card-container {
+        margin-top: 33px;
+        margin-left: 13px;
+    }
  }
 /* (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -2657,6 +2715,11 @@ footer .general-container{
     /****************************** PERSONAL - CHANGE PASSWORD ******************/
     .section-personal.change-password .password-column input {
         width: 345px;
+    }
+
+    /***************************** PERSONAL - ACTIVATE DISCOUNT ****************/
+    .section-personal.discount .cards-inputs-column .form-control {
+        width: 355px;
     }
 
 }
