@@ -405,7 +405,7 @@ input.form-control{
     z-index:200;
     /*display:none;*/
 }
-.ai-popup-window {
+.ia-popup-window {
     position:absolute;
     min-width:460px;
     min-height:460px;
@@ -428,10 +428,24 @@ input.form-control{
     border: none;
     padding-top: 54px;
 }
-.ai-modal .modal-title {
+.ia-modal .modal-title {
     font-family: "Myriad Pro";
 }
-
+.ia-modal .modal-content{
+    border-radius: 10px;
+}
+.ia-modal .close{
+    background-color: #de263c;
+    opacity: 1;
+    color: #fff;
+    font-size: 13px;
+    width: 27px;
+    height: 27px;
+    border-radius: 8px;
+    position: absolute;
+    right: -31px;
+    top: -32px;
+}
 /******************************* HEADER ***********************************/
 header{
     padding-top: 30px;
