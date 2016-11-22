@@ -314,6 +314,85 @@ input.form-control{
 .ia-checkbox label:hover:before {
     border: 1px solid #5d3d1d!important;
 }
+
+/*************************** SHIPPING TRACKBAR ************************/
+.shipping-bar {
+    padding-left: 70px;
+}
+.shipping-bar li {
+    float:left;
+    text-align:center;
+    width:97px;
+    color:rgb(217,217,217);
+    border-top:1px solid rgb(217,217,217);
+    position:relative;
+}
+.shipping-bar li:last-child {
+    border-top:1px solid transparent;
+    width: 10px;
+}
+.shipping-bar li .icon-wrap{
+    display:inline-block;
+    width:24px;
+    height:24px;    
+    border:2px solid rgb(217,217,217);
+    font: normal normal normal 14px/1 FontAwesome;
+    border-radius:50%;
+    position:absolute;
+    left:37px;
+    right:0;
+    margin-top:-12px;
+    background-color: white;
+}
+.shipping-bar li.current {
+    color:rgb(99,186,196);
+    font-weight:bold;
+}
+.shipping-bar li.current .icon-wrap {
+    background-color:rgb(217,217,217);        
+}
+.shipping-bar li .icon-wrap i:before {
+    font-style:normal;
+}
+.shipping-bar li.completed .icon-wrap i:before {
+    content: "\f00c";
+}
+.shipping-bar li.not-completed .icon-wrap i:before {
+    content: "\f253";
+}
+.shipping-bar li.not-completed .stage-text{
+    color: #79828b;
+}
+.shipping-bar li.current .icon-wrap i:before {        
+    content:"\f111";      
+    width: 14px;
+    height:14px;
+} 
+.shipping-bar li.current .icon-wrap i {
+    font-size: 17px;
+    line-height:20px;        
+    width: 14px;
+    height:14px;
+    content:"\f111";
+}
+.shipping-bar li .icon-wrap i {
+    font-size:10px;
+    line-height:21px;
+    display:inline-block;
+}
+.shipping-bar li .stage-text{
+    display:block;
+    font-size: 12px;
+    width: 100px;
+    margin-top: 22px;
+    text-align: center;
+}
+.shipping-bar .icon-wrap, 
+.shipping-bar .stage-text {
+    margin-left: -50px;
+}
+
+
 /******************************* HEADER ***********************************/
 header{
     padding-top: 30px;
@@ -1754,6 +1833,14 @@ nav.navigation .third-level-container li{
         padding: 7px 7px 0px;
     }
 
+    .section-personal.orders .more-data-container .shipping-progress-container {
+        margin-top: 52px;
+        padding-left: 80px;
+    }
+    .section-personal.orders .more-data-container .close-button-container {
+        text-align:center;
+        padding: 25px 0 21px;
+    }
 
 /******************************** FOOTER **************************************/
 footer .about .row{
@@ -2296,7 +2383,7 @@ footer .general-container{
         margin-bottom: 8px;
     }
 
-    /****************************** PROFILE - ACTIVATE DISCOUNT ******************/
+    /****************************** PERSONAL - ACTIVATE DISCOUNT ******************/
     .section-personal.discount .cards-inputs-column .form-control {
         width: 290px;
     }
@@ -2313,6 +2400,57 @@ footer .general-container{
     .section-personal.discount .card-column .card-container img {
         width: 290px;
         height: 177px;
+    }
+
+
+    /*************************** PERSONAL - ORDERS *******************************/
+    .section-personal.orders .table-row .order-number {
+         margin-left: 0px; 
+    }
+    .section-personal.orders .table-row .pay-btn {
+         margin-right: 0px; 
+    }
+    .section-personal.orders .table-row .repeat-btn {
+         margin-right: 0px; 
+    }
+    .section-personal.orders .table-row .controls-buttons-column {
+        padding-left: 0px;
+        padding-right:0;
+    }
+    .section-personal.orders .table-row .pay-btn {
+        padding: 9px 18px;
+    }
+    .section-personal.orders .table-row .more-data-container ul {
+        padding-left: 12px;
+    }
+    .section-personal.orders .table-row.opened {
+        padding-top: 16px;
+    }
+    .section-personal.orders .table-row .more-data-container .brown-text {
+        font-size: 14px;
+    }
+    .section-personal.orders .more-data-container .price-column {
+        padding-left: 3px;
+        padding-top: 0px;
+    }
+    .section-personal.orders .more-data-container .data-list {
+        padding: 23px 0px 0 10px;
+    }
+    .section-personal.orders .more-data-container .data-list .value {
+         padding-left: 15px; 
+    }
+    .section-personal.orders .more-data-container .data-list .title {
+        padding: 1px 15px;
+    }
+    .section-personal.orders .more-data-container .shipping-progress-container {
+        margin-top: 25px;
+        padding-left: 11px;
+    }
+    .section-personal.orders .more-data-container .shipping-progress-container .value {
+        color: rgb(99,186,196);
+    }
+    .section-personal.orders .more-data-container .close-button-container {
+        padding: 16px 0 25px;
     }
 }
 
@@ -2730,6 +2868,46 @@ footer .general-container{
         margin-top: 33px;
         margin-left: 13px;
     }
+
+    /******************************* PERSONAL ORDERS ******************************/
+    .section-personal.orders .table-row .controls-buttons-column {
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    .section-personal.orders .table-row .pay-btn {
+        margin-right: 0px;
+    }
+    .section-personal.orders .table-row .repeat-btn {
+        margin-right: 0px;
+    }
+    
+    .section-personal.orders .more-data-container .count-column {
+        padding-left: 0px;
+        padding-right:0;
+    }
+    .section-personal.orders .more-data-container .price-column {
+        padding-left: 14px;
+        padding-top: 0px;
+    }
+    .section-personal.orders .more-data-container .data-list {
+        padding: 15px 0px 0 27px;
+    }
+    .section-personal.orders .more-data-container .shipping-progress-container {
+        margin-top: 25px;
+        padding-left: 27px;
+    }
+    .section-personal.orders .more-data-container .shipping-progress-container .title {
+        font-weight:bold;
+    }
+    .section-personal.orders .more-data-container .shipping-progress-container .value {
+        color: rgb(99,186,196);
+    }
+    .section-personal.orders .more-data-container .close-button-container {
+        text-align: center;
+        padding: 19px 0 21px;
+    }
+
+
  }
 /* (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -2866,6 +3044,27 @@ footer .general-container{
     /***************************** PERSONAL - ACTIVATE DISCOUNT ****************/
     .section-personal.discount .cards-inputs-column .form-control {
         width: 355px;
+    }
+
+    /***************************** PERSONAL ORDERS ****************************/
+    .section-personal.orders .table-row .pay-btn {
+         margin-right: 0px; 
+    }
+    .section-personal.orders .table-row .repeat-btn {
+        margin-right: 0px;
+    }
+    .section-personal.orders .table-row .controls-buttons-column {
+        padding-left: 0px;
+    }
+    .section-personal.orders .more-data-container .shipping-progress-container {
+        padding-left: 37px;
+    }
+     .section-personal.orders .more-data-container .shipping-bar li,
+     .section-personal.orders .more-data-container .shipping-bar li .stage-text {
+        width: 80px;
+    }
+    .section-personal.orders .orders-table-column .table-header .count-column .title {
+        line-height: 25px;
     }
 
 }
