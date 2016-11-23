@@ -133,6 +133,19 @@ textarea.form-control {
     font-size: 17px;
     color:rgb(176,178,185);
 }
+
+/************* CUSTOM ICONS ***************/
+i.ai-icon-bs {
+    font-family: 'Glyphicons Halflings';
+    font-style:normal;
+}
+i.ai-icon-bs.ia-phone-icon:before {
+    content: "\e183";
+}
+i.ai-icon-bs.ia-link-icon:before {
+    content: "\e144";
+}
+
 /******** IMAGE RADIO BUTTON **************/
 .radio-container .radio-button-container {
     display:inline-block;
@@ -458,6 +471,15 @@ textarea.form-control {
     display:inline-block;
     font-size: 13px;
     letter-spacing: 0.5px;
+}
+.ia-modal .button-container {
+    text-align:center;
+    margin-top: 28px;
+    padding-bottom: 37px
+}
+.ia-modal .button-container button {
+    font-size: 14px;
+    padding: 10px 47px;
 }
 /******************************* HEADER ***********************************/
 header{
@@ -1909,15 +1931,10 @@ nav.navigation .third-level-container li{
     }
 
 
-/***************************** MODAL QUESTION ****************************/
-#question-popup .button-container {
-    text-align:center;
-    margin-top: 28px;
-    padding-bottom: 37px
-}
-#question-popup .button-container button {
-    font-size: 14px;
-    padding: 10px 47px;
+/***************************** MODALS ****************************/
+#found-cheeper .icon-input-container i.ia-phone-icon ,
+#found-cheeper .icon-input-container i.ia-link-icon {
+    top: 13%;
 }
 /******************************** FOOTER **************************************/
 footer .about .row{
