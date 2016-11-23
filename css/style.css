@@ -24,6 +24,7 @@ body{
 .blue-btn{
 	background-color:rgb(99,186,196);
 	padding:6px 30px;
+    text-transform: uppercase;
 }
 .blue-dark-btn{
     background-color:#39acd8;
@@ -74,12 +75,16 @@ body{
     background: url(../images/vimeo-link.png) no-repeat #fff;
 }
 /* INPUTS */
-input.form-control{
+input.form-control,
+textarea.form-control{
     border-radius: 10px;
     height: 31px;
     width: 340px;
     border: 2px solid #5d3d1d;
     font-size: 12px;
+}
+textarea.form-control {
+    height: 85px;
 }
 .search-input-container{
     position:  relative;
@@ -111,6 +116,22 @@ input.form-control{
 .grey-container{
 	border-radius:5px;
 	background-color:rgb(242,242,236);
+}
+/******** INPUT WITH ICON *****************/
+.icon-input-container {
+    text-align:center;
+    padding: 12px 10px;
+}
+.icon-input-wrap {
+    position:relative;
+    display:inline-block;
+}
+.icon-input-container i {
+    position: absolute;
+    top: 21%;
+    right: 11px;
+    font-size: 17px;
+    color:rgb(176,178,185);
 }
 /******** IMAGE RADIO BUTTON **************/
 .radio-container .radio-button-container {
@@ -394,25 +415,6 @@ input.form-control{
 
 
 /******************************* POPUP ************************************/
-#popup-overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color:#000;
-    opacity:0.7;
-    z-index:200;
-    /*display:none;*/
-}
-.ia-popup-window {
-    position:absolute;
-    min-width:460px;
-    min-height:460px;
-    background-color:#fff;
-    border-radius:10px;
-    z-index:201;
-}
 .ia-modal  .modal-dialog {
     width: 470px;
     margin: 372px auto;
@@ -445,6 +447,17 @@ input.form-control{
     position: absolute;
     right: -31px;
     top: -32px;
+}
+.ia-modal .modal-content .status-container{
+    text-align:center;
+    display:none;
+}
+.ia-modal .modal-content .status-container .success {
+    color:rgb(99,186,196);
+    width:250px;
+    display:inline-block;
+    font-size: 13px;
+    letter-spacing: 0.5px;
 }
 /******************************* HEADER ***********************************/
 header{
@@ -1895,6 +1908,17 @@ nav.navigation .third-level-container li{
         padding: 25px 0 21px;
     }
 
+
+/***************************** MODAL QUESTION ****************************/
+#question-popup .button-container {
+    text-align:center;
+    margin-top: 28px;
+    padding-bottom: 37px
+}
+#question-popup .button-container button {
+    font-size: 14px;
+    padding: 10px 47px;
+}
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -1954,6 +1978,24 @@ footer .general-container{
 /******************************* MEDIA QUERIES ********************************/
 /* Mobile */
 @media (max-width: 760px) {
+
+    /*********** GENERAL ***************/
+    .ia-modal .close {
+        right: 0px;
+    }
+    .ia-modal .modal-dialog {
+        width: 316px;
+    }
+    .ia-modal .modal-body {
+        padding: 15px 10px;
+    }
+    .ia-modal input.form-control, 
+    .ia-modal textarea.form-control {
+        width: 290px;
+    }
+    .ia-modal .icon-input-container {
+        padding: 12px 0px;
+    }
 
 
 	header{

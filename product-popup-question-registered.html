@@ -800,13 +800,7 @@
     });
 </script>
     
-    <!--<div id="popup-overlay">
-
-    </div>
-    <div class="ai-popup-window">
-
-    </div>-->
-    <!-- Modal -->
+    <!-- Modal QUESTION UNREGISTERED-->
 <div class="modal fade ia-modal" id="question-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -820,6 +814,22 @@
         <h4 class="modal-title">Задать вопрос</h4>
       </div>
       <div class="modal-body">
+          <form>
+              <div class="icon-input-container">
+                <div class="icon-input-wrap">
+                  <textarea rows="10" cols="45" name="mail-text" placeholder="Текс сообщения"  class="form-control email-textarea"> 
+                  </textarea>
+                </div>
+              </div>
+              <div class="status-container">
+                  <div class="success">Ответ на Ваш вопрос можно будет прочитать в личном кабинете</div>
+              </div>
+              <div class="button-container">
+                  <button class="btn btn-default ia-btn text-btn blue-btn" type="submit" name="send-button" value="Отправить">
+                    <span>Отправить</span>
+                </button>
+              </div>
+          </form>
       </div>
     </div>
   </div>
