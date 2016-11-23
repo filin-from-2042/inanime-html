@@ -1976,6 +1976,42 @@ nav.navigation .third-level-container li{
 #add-comment .minus-column {
     padding-left:10px
 }
+/********** REGISTRATION ************/
+#registration-modal .row.autoriazation-social {
+
+}
+#registration-modal .row.captcha-input-image {    
+    padding-top: 10px;
+}
+#registration-modal .captcha-image-column {
+    padding-left: 5px;
+}
+#registration-modal .captcha-input-column {
+    padding-right: 0;
+}
+#registration-modal .captcha-input-column .input-container{
+    text-align: right;
+    padding-right: 10px;
+}
+#registration-modal .captcha-input-column .captcha-symbols-input {
+    width: 138px;
+    display: inline-block;
+}
+#registration-modal .captcha-image-column .captcha {
+    width:187px;
+    height:32px;
+}
+#registration-modal .autorization-column,
+#registration-modal .social-column,
+#autorization-modal .registration-column,
+#autorization-modal .social-column{
+    text-align:center;
+}
+#registration-modal .autorization-social ,
+#autorization-modal .registration-social {
+    margin-top:40px;
+}
+
 
 /******************************** FOOTER **************************************/
 footer .about .row{
@@ -2608,6 +2644,9 @@ footer .general-container{
 
     #add-comment.ia-modal .modal-dialog {
         width: 316px;
+    }
+    #registration-modal .captcha-image-column .captcha {
+        width: 100%;
     }
 }
 
