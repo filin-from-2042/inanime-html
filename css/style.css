@@ -1932,10 +1932,51 @@ nav.navigation .third-level-container li{
 
 
 /***************************** MODALS ****************************/
+/****** FOUND CHEEPER ************/
 #found-cheeper .icon-input-container i.ia-phone-icon ,
 #found-cheeper .icon-input-container i.ia-link-icon {
     top: 13%;
 }
+/********* ADD COMMENT **********/
+#add-comment textarea.form-control {
+    width:100%;
+}
+#add-comment .icon-input-wrap {
+    display:block;
+}
+#add-comment.ia-modal .modal-dialog {
+    width:600px;
+}
+#add-comment .rating-container {
+    text-align:center;
+}
+#add-comment .modal-body {
+    color:rgb(121,130,139);
+}
+#add-comment .text-title i {
+    margin-right: 8px;
+    font-size: 15px;
+    color:#5d3d1d;
+}
+#add-comment .icon-input-container {
+    padding: 8px 0px;
+}
+#add-comment .row{
+    margin: 0 10px;
+}
+#add-comment .comment-row{
+    margin-top: 10px;
+}
+#add-comment .button-container {
+    margin-top: 23px;
+}
+#add-comment .advantages-column {
+    padding-right:10px
+}
+#add-comment .minus-column {
+    padding-left:10px
+}
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -2563,6 +2604,10 @@ footer .general-container{
     }
     .section-personal.orders .more-data-container .close-button-container {
         padding: 16px 0 25px;
+    }
+
+    #add-comment.ia-modal .modal-dialog {
+        width: 316px;
     }
 }
 
