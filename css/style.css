@@ -2010,9 +2010,20 @@ nav.navigation .third-level-container li{
 #autorization-modal .social-column{
     text-align:center;
 }
-#registration-modal .autorization-social ,
-#autorization-modal .registration-social {
+#registration-modal .autorization-social {
     margin-top:40px;
+}
+
+/********** MODAL AUTORIZATION **********/
+#autorization-modal .reset-link-container {
+    text-align:center;
+}
+#autorization-modal .registration-social {
+    margin-top: 30px;
+}
+#autorization-modal .reset-link {
+    font-size: 15px;
+    letter-spacing: 0.5px;
 }
 
 /********** PASSWORD RESET **********/
