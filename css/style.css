@@ -2048,6 +2048,28 @@ nav.navigation .third-level-container li{
     font-size: 14px;
     padding: 10px 35px;
 }
+/********* MODAL BASKET CLEAR *******/
+#backet-clear-modal .backet-clear-text {
+    text-align:center;
+}
+#backet-clear-modal .button-container {
+    text-align: center;
+    margin-top: 33px;
+    padding-bottom: 37px;
+    margin-bottom: 45px;
+}
+#backet-clear-modal .yes-answer {
+    text-align:right;
+    padding-right: 5px;
+}
+#backet-clear-modal .no-answer {
+    text-align:left;
+    padding-left: 5px;
+}
+#backet-clear-modal .button-container button {
+    font-size: 14px;
+    padding: 10px 74px;
+}
 
 /******************************** FOOTER **************************************/
 footer .about .row{
