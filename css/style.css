@@ -481,6 +481,9 @@ i.ai-icon-bs.ia-link-icon:before {
     font-size: 14px;
     padding: 10px 47px;
 }
+.ia-modal  .modal-body {
+    color:rgb(121,130,139);
+}
 /******************************* HEADER ***********************************/
 header{
     padding-top: 30px;
@@ -2012,6 +2015,28 @@ nav.navigation .third-level-container li{
     margin-top:40px;
 }
 
+/********** PASSWORD RESET **********/
+#password-reset-modal .reset-title-container {
+    text-align:center;
+}
+#password-reset-modal .reset-title{
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 25px;
+}
+#password-reset-modal .registration-social{
+    margin-top: 18px;
+}
+#password-reset-modal .autorization-column {
+    text-align: right;
+}
+#password-reset-modal  .button-container {
+    margin-top: 41px;
+}
+#password-reset-modal .button-container button {
+    font-size: 14px;
+    padding: 10px 35px;
+}
 
 /******************************** FOOTER **************************************/
 footer .about .row{
@@ -2647,6 +2672,9 @@ footer .general-container{
     }
     #registration-modal .captcha-image-column .captcha {
         width: 100%;
+    }
+    #password-reset-modal .reset-title {
+        width: 90%;
     }
 }
 
