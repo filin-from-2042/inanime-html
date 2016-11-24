@@ -26,6 +26,14 @@ body{
 	padding:6px 30px;
     text-transform: uppercase;
 }
+.red-btn{
+    background-color:#d24354;
+    padding:6px 30px;
+}
+.gray-btn{
+    background-color:#bdbec5;
+    padding:6px 30px;
+}
 .blue-dark-btn{
     background-color:#39acd8;
 }
@@ -2243,34 +2251,160 @@ nav.navigation .third-level-container li{
     color:#fff;     
     background-color:rgb(99,186,196); 
 }
-.ia-basket #my-basket .grey-container {
+#my-basket .grey-container {
     margin-top:55px;
 }
-.ia-basket #my-basket .column-header .column-title{
+#my-basket .column-header .column-title{
     font-weight: bold;
     display: inline-block;
     padding: 17px 10px;
     font-size: 15px;
     padding-left: 25px;
 }
-.ia-basket #my-basket .column-header.column-units .column-title {
+#my-basket .column-header.column-units .column-title {
     padding-left: 0px;
 }
 
-.ia-basket #my-basket .table-header {
+#my-basket .table-header {
     border-radius:10px;
 }
-    .ia-basket #my-basket .table-content-container {
-        border:2px solid #5d3d1d;
-        border-radius:10px;
-        margin-top: 20px;
-        padding: 20px;
-    }
-.ia-basket #my-basket .table-content-container .content-row{
+#my-basket .table-content-container {
+    border:2px solid #5d3d1d;
+    border-radius:10px;
+    margin-top: 20px;
+    padding: 20px 20px 5px;
+}
+#my-basket .table-content-container .content-row{
+    margin-bottom: 15px;
+}
+#my-basket .table-content-container .content-row,
+#my-basket .table-content-container .column-content{
     min-height: 80px;
 }
+#my-basket .table-content-container .column-content .column-data{
+    line-height: 80px;
+}
+#my-basket .table-content-container .product-preview{
+    max-width: 92px;
+    max-height: 78px;
+    border-radius: 10px;
+}
+#my-basket .table-content-container .ia-checkbox,
+#my-basket .table-content-container .product-title{
+    display: inline-block;
+}
+#my-basket .table-content-container .ia-checkbox [type="checkbox"]:not(:checked) + label:before,
+#my-basket .table-content-container .ia-checkbox [type="checkbox"]:checked + label:before {
+    left: -2px;
+    top: 30px;
+}
+#my-basket .table-content-container .ia-checkbox [type="checkbox"]:not(:checked) + label:after,
+#my-basket .table-content-container .ia-checkbox [type="checkbox"]:checked + label:after {
+    top: 35px;
+    left: 2px;
+}
+#my-basket .table-content-container .ia-checkbox [type="checkbox"]:not(:checked) + label,
+#my-basket .table-content-container .ia-checkbox [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    color: #79828b;
+    font-weight: normal;
+}
+#my-basket .table-content-container .product-title{
+    vertical-align: middle;
+    padding-left: 15px;
+}
+#my-basket .product-title .product-name a{
+    color:#5d3d1d;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+#my-basket .product-title .product-article{
+    color:#79828b;
+    margin-top: 5px;
+}
+#my-basket .table-content-container .column-cost,
+#my-basket .table-content-container .column-count,
+#my-basket .table-content-container .column-all-cost{
+    text-align: right;
+}
+#my-basket .table-content-container .column-all-cost    {
+    font-size: 21px;
+    font-weight: bold;
 
-
+}
+#my-basket .table-content-container .column-cost .price.old{
+    text-decoration: line-through;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+#my-basket .table-content-container .column-cost .price.yellow-text{
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 12px;
+}
+#my-basket .table-content-container .column-all-cost .column-data{
+    margin-right: 5px;
+}
+#my-basket .table-content-container .column-units{
+    color: #79828b;
+}
+#my-basket .actions-container{
+    margin-top: 41px;
+}
+#my-basket .action-button-container .put-aside-action{
+    padding: 8px 36px;
+}
+#my-basket .action-button-container .remove-action{
+    padding: 8px 41px;
+    margin-left: 10px
+}
+#my-basket .actions-container .coupon-container{
+    margin-top: 42px;
+}
+#my-basket .actions-container .coupon-container .input-container{
+    display: inline-block;
+}
+#my-basket .actions-container .coupon-container .apply-action{
+    margin-left: 8px;
+    padding: 8px 14px;
+}
+#my-basket .actions-container .basket-action-column{
+    text-align: right;
+}
+#my-basket .actions-container .total-container .total-title,
+#my-basket .actions-container .total-container .total-value{
+    font-weight: bold;
+}
+#my-basket .actions-container .total-container .total-title{
+    letter-spacing: 1px;
+}
+#my-basket .actions-container .total-container .total-value{
+    font-size: 29px;
+    line-height: 20px;
+    margin-right: 26px;
+    margin-left: 12px;
+}
+#my-basket .basket-action-column .action-button-container{
+    margin-top: 41px;
+}
+#my-basket .basket-action-column .action-button-container .ia-btn {
+    padding: 11px 26px;
+    font-size: 14px;
+}
+#my-basket .basket-action-column  .action-button-container .clear-btn{
+    margin-right: 11px;
+    padding: 11px 21px;
+}
+#my-basket .general-text{
+    color: #79828b;
+    margin-top: 53px;
+    margin-bottom: 78px;
+}
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;

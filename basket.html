@@ -338,7 +338,7 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#my-basket" aria-controls="my-basket" role="tab" data-toggle="tab">Моя корзина</a></li>
                             <li role="presentation"><a href="#put-aside" aria-controls="put-aside" role="tab" data-toggle="tab">Отложенные товары</a></li>
-                            <li role="presentation"><a href="#not-available"" aria-controls="not-available" role="tab" data-toggle="tab">Нет в наличии</a></li>
+                            <li role="presentation"><a href="#not-available" aria-controls="not-available" role="tab" data-toggle="tab">Нет в наличии</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">
@@ -364,13 +364,22 @@
                                 <div class="table-content-container">
                                     <div class="row content-row">
                                         <div class="col-md-10 col-lg-10 column-content column-name">
-                                            <span class="column-title">Наименование</span>
+                                            <div class="ia-checkbox">
+                                                <input type="checkbox" id="test2" >
+                                                <label for="test2">
+                                                    <img class="product-preview" src="images/attack_on_titan_koltso_a.jpg"/>
+                                                </label>
+                                            </div>
+                                            <div class="product-title">
+                                                <div class="product-name"><a href="#">Nendoroid Ryoma Echizen</a></div>
+                                                <div class="product-article">арт. 23434643</div>
+                                            </div>
                                         </div>
                                         <div class="col-md-2 col-lg-2 column-content column-units">
-                                            <span class="column-title">шт.</span>
+                                            <span class="column-data">шт.</span>
                                         </div>
                                         <div class="col-md-4 col-lg-4 column-content column-cost">
-                                            <span class="column-title">
+                                            <span class="column-data">
                                                 <div class="price">
                                                     <span class="price old">580 <span class="rub"></span> ₽</span>
                                                     <span class="price yellow-text">220 <span class="rub"></span> ₽</span>
@@ -378,7 +387,7 @@
                                             </span>
                                         </div>
                                         <div class="col-md-4 col-lg-4 column-content column-count">
-                                            <span class="column-title">
+                                            <span class="column-data">
                                                 <div class="ia-counter-container">
                                                     <div class="increase button"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
                                                     <div class="decrease button"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -387,9 +396,76 @@
                                             </span>
                                         </div>
                                         <div class="col-md-4 col-lg-4 column-content column-all-cost">
-                                            <span class="column-title">630 р</span>
+                                            <span class="column-data  yellow-text">630 ₽</span>
                                         </div>
                                     </div>
+                                    <div class="row content-row">
+                                        <div class="col-md-10 col-lg-10 column-content column-name">
+                                            <div class="ia-checkbox">
+                                                <input type="checkbox" id="test3" >
+                                                <label for="test3">
+                                                    <img class="product-preview" src="images/attack_on_titan_koltso_a.jpg"/>
+                                                </label>
+                                            </div>
+                                            <div class="product-title">
+                                                <div class="product-name"><a href="#">Nendoroid Ryoma Echizen</a></div>
+                                                <div class="product-article">арт. 23434643</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 column-content column-units">
+                                            <span class="column-data">шт.</span>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 column-content column-cost">
+                                            <span class="column-data">
+                                                <div class="price">
+                                                    <span class="price old">580 <span class="rub"></span> ₽</span>
+                                                    <span class="price yellow-text">220 <span class="rub"></span> ₽</span>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 column-content column-count">
+                                            <span class="column-data">
+                                                <div class="ia-counter-container">
+                                                    <div class="increase button"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                                                    <div class="decrease button"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                                                    <input type="text" class="counter-value" value="1"/>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 column-content column-all-cost">
+                                            <span class="column-data  yellow-text">630 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row actions-container">
+                                    <div class="col-md-12 col-lg-12 table-action-column">
+                                        <div class="action-button-container">
+                                            <button type="button" class="btn btn-default ia-btn text-btn blue-btn put-aside-action">Отложить</button>
+                                            <button type="button" class="btn btn-default ia-btn text-btn red-btn remove-action">Удалить</button>
+                                        </div>
+                                        <div class="coupon-container">
+                                            <div class="input-container">
+                                                <input type="text" name="second-name" value="" placeholder="Введите новый пароль" class="form-control second-name-input">
+                                            </div>
+                                            <button type="button" class="btn btn-default ia-btn text-btn yellow-btn apply-action">Применить</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 basket-action-column">
+                                        <div class="total-container">
+                                            <span class="total-title">Итого:</span>
+                                            <span class="total-value yellow-text">870 ₽</span>
+                                        </div>
+                                        <div class="action-button-container">
+                                            <button type="button" class="btn btn-default ia-btn text-btn gray-btn clear-btn">Очистить корзину</button>
+                                            <button type="button" class="btn btn-default ia-btn text-btn yellow-btn checkout-btn">Оформить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="general-text">
+                                    Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от
+                                    нас анализа форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности в
+                                    значительной степени обуславливает создание направлений прогрессивного развития. С другой стороны реализация намеченных
+                                    плановых заданий требуют определения и уточнения направлений прогрессивного развития.
                                 </div>
                             </div>
                         </div>
