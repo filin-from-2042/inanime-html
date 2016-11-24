@@ -2206,6 +2206,71 @@ nav.navigation .third-level-container li{
 #quick-order-modal .product-info .counter-button-container {
     margin-top: 8px;
 }
+
+/********************************* BASKET **************************************/
+.ia-basket {
+    margin-top:150px;
+}
+.ia-basket ul.nav.nav-tabs {
+    /*display:inline-block;*/
+    border:none;
+    width:650px;
+    margin: 0 auto;
+}
+    /*.ia-basket ul.nav.nav-tabs:before,
+    .ia-basket ul.nav.nav-tabs:after {
+        display:none;
+    }*/
+.ia-basket .nav-tabs-container {
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+    .ia-basket .nav-tabs li {
+        width:191px;
+        cursor:pointer;
+        margin-right: 5px;
+    }
+.ia-basket .nav-tabs li a{
+    text-transform:uppercase;  
+    background-color:rgb(234,234,228);     
+    border-radius: 10px 10px 0 0;
+    /*padding: 11px 50px;*/     
+    color:#000;   
+}
+.ia-basket .nav-tabs li.active{
+}
+.ia-basket .nav-tabs li.active a{
+    color:#fff;     
+    background-color:rgb(99,186,196); 
+}
+.ia-basket #my-basket .grey-container {
+    margin-top:55px;
+}
+.ia-basket #my-basket .column-header .column-title{
+    font-weight: bold;
+    display: inline-block;
+    padding: 17px 10px;
+    font-size: 15px;
+    padding-left: 25px;
+}
+.ia-basket #my-basket .column-header.column-units .column-title {
+    padding-left: 0px;
+}
+
+.ia-basket #my-basket .table-header {
+    border-radius:10px;
+}
+    .ia-basket #my-basket .table-content-container {
+        border:2px solid #5d3d1d;
+        border-radius:10px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+.ia-basket #my-basket .table-content-container .content-row{
+    min-height: 80px;
+}
+
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
