@@ -2073,6 +2073,10 @@ nav.navigation .third-level-container li{
 
 
 /******************** MODAL QUICK ORDER ************************/
+#quick-order-modal .modal-body {
+    position: relative;
+    padding: 15px 15px 57px;
+}
 #quick-order-modal .modal-dialog {
     width: 1150px;
 }
@@ -2090,13 +2094,14 @@ nav.navigation .third-level-container li{
 }
 #quick-order-modal .order-input-fields{
     padding-left: 38px;
+    border-right: 1px solid #eee;
 }
 #quick-order-modal .icon-input-container i.ia-phone-icon {
     top: 13%;
 }
 #quick-order-modal .button-container {
     margin-top: 40px;
-    padding-bottom: 52px;
+    padding-bottom: 0px;
 }
 #quick-order-modal .cancel-btn-container{
     text-align: right;
@@ -2108,6 +2113,98 @@ nav.navigation .third-level-container li{
 #quick-order-modal .execute-btn-container{
     text-align: left;
     padding-left: 5px;
+}
+#quick-order-modal .photo-big-container {
+    text-align:center;
+}
+#quick-order-modal .photo-big {
+    max-width:282px;
+    max-height:242px;
+}
+#quick-order-modal .preview-photo-carousel {
+    margin-top: 10px;
+}
+#quick-order-modal .photo-carousel-container img {
+    max-width: 68px;
+    max-height: 58px;
+}
+#quick-order-modal .preview-photo-carousel ul li {  
+    width: 78px;
+    height: 68px;
+    padding-right: 10px;
+}
+#quick-order-modal .photo-carousel-container .button {
+    margin-top: -58px;
+}
+#quick-order-modal .photo-carousel-container .prev.button {
+    left: 20px;
+}
+#quick-order-modal .photo-carousel-container .next.button {
+    right: 30px;
+}
+#quick-order-modal .product-info {
+    margin-top: 0px;
+}
+#quick-order-modal .product-info .title-container {
+    color:#000;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing:normal;
+    margin-top: 5px;
+}
+#quick-order-modal .product-info .art-container span {
+    font-size: 12px;
+}
+#quick-order-modal .product-info .description-container {
+    margin-top: 0px;
+}
+#quick-order-modal .product-info .rate-container {
+    height: 36px;
+}
+#quick-order-modal .product-info .price-container .price.old {
+    font-size: 18px;
+    margin-right: 0px;
+}
+#quick-order-modal .product-info .price-container .price {
+    font-size: 29px;
+    display:inline-block;
+}
+#quick-order-modal .product-info .price-container .price.yellow-text {
+    color: rgb(252,154,0);
+}
+#quick-order-modal .product-info .price-container {
+    margin-top: 15px;
+}
+#quick-order-modal .product-info .discount .discount-amount {
+    font-size: 13px;
+}
+
+#quick-order-modal .product-info .color-container {
+    margin-left: 37px;
+}
+#quick-order-modal .product-info .color-container .ia-radio-button {
+    margin-right: 7px;
+}
+#quick-order-modal .product-info .color-container, .product-info .size-container {
+    display: inline-block;
+}
+#quick-order-modal .product-info .properties-container .ia-radio-button {
+    margin-right: 4px;
+}
+#quick-order-modal .product-info .counter-button-container .total-text {
+    font-size: 17px;
+    margin-left: 26px;
+    letter-spacing: 1px;
+}
+#quick-order-modal .product-info .counter-button-container .total-value{
+    color: rgb(252,154,0);
+    font-size: 33px;
+    font-weight: bold;
+    margin-left: 8px;
+    letter-spacing: 3px;
+}
+#quick-order-modal .product-info .counter-button-container {
+    margin-top: 8px;
 }
 /******************************** FOOTER **************************************/
 footer .about .row{
@@ -2747,6 +2844,42 @@ footer .general-container{
     #password-reset-modal .reset-title {
         width: 90%;
     }
+    
+    /*********************** MODAL QUICK ORDER ******************/
+    #quick-order-modal .modal-dialog {
+        width: 315px;
+    }
+    #quick-order-modal .modal-header {
+        padding-top: 0px;
+    }
+    #quick-order-modal .product-info {
+        margin-top: 23px;
+    }
+    #quick-order-modal  .product-info .price-container span.price:first-child {
+         padding-left: 0px; 
+    }
+
+    #quick-order-modal  input.form-control {
+        width: 246px;
+    }
+    #quick-order-modal .order-input-fields {
+        padding-left: 12px;
+    }
+    #quick-order-modal .button-container button {
+        padding: 10px 28px;
+    }
+    #quick-order-modal .product-info .color-container {
+        margin-left: 5px;
+    }
+    #quick-order-modal .product-info .counter-button-container .total-text {
+        margin-left: 10px;
+    }
+    #quick-order-modal .product-info .counter-button-container {
+        margin-top: 8px;
+    }
+     #quick-order-modal .product-info .ia-counter-container {
+    margin-left: 0px;
+}
 }
 
 /* Tablet */
@@ -3201,6 +3334,17 @@ footer .general-container{
         text-align: center;
         padding: 19px 0 21px;
     }
+    
+    /*********************** MODAL QUICK ORDER ******************/
+    #quick-order-modal .modal-dialog {
+        width: 766px;
+    }
+    #quick-order-modal .order-input-fields {
+        margin-top: 15px;
+    }
+    #quick-order-modal .modal-header {
+        padding-top: 6px;
+    }
 
 
  }
@@ -3360,6 +3504,32 @@ footer .general-container{
     }
     .section-personal.orders .orders-table-column .table-header .count-column .title {
         line-height: 25px;
+    }
+
+    /*********************** MODAL QUICK ORDER ******************/
+    #quick-order-modal .modal-dialog {
+        width: 922px;
+    }
+    #quick-order-modal input.form-control, textarea.form-control {
+        width: 260px;
+    }
+    #quick-order-modal  .button-container button {
+        font-size: 14px;
+        padding: 10px 32px;
+    }
+    #quick-order-modal .product-info .counter-button-container .total-text {
+        font-size: 17px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+    }
+    #quick-order-modal .product-info .color-container {
+        margin-left: 2px;
+    }
+    #quick-order-modal .photo-carousel-container .prev.button {
+        left: 0px;
+    }
+    #quick-order-modal .photo-carousel-container .next.button {
+        right: 10px;
     }
 
 }
