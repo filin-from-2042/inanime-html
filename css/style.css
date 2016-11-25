@@ -2405,6 +2405,9 @@ nav.navigation .third-level-container li{
     margin-top: 53px;
     margin-bottom: 78px;
 }
+#my-basket .table-content-container .column-content .mobile-row-data-container {
+    display:none;
+}
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -3077,8 +3080,67 @@ footer .general-container{
         margin-top: 8px;
     }
      #quick-order-modal .product-info .ia-counter-container {
-    margin-left: 0px;
-}
+        margin-left: 0px;
+    }
+     /*************************** BASKET ***************************/
+     .basket-tabs-container .nav.nav-tabs {
+        padding: 0px 28px;
+    }
+    .basket-tabs-container .nav.nav-tabs {
+        text-transform: uppercase;
+        border-bottom: 0;
+        width: 99%;
+    }
+    .basket-tabs-container .nav-tabs > li {
+        width: 100%;
+        text-align: center;
+        margin-top: -5px;
+    }
+    .ia-basket ul.nav.nav-tabs {
+         width: auto; 
+    }
+    #my-basket .table-content-container .column-content .product-title{
+        display:block;
+    }
+    #my-basket .table-content-container .column-content .column-data {
+        line-height: 10px;
+    }
+    #my-basket .table-content-container .column-content .mobile-row-data-container {
+        display:inline-block;
+        vertical-align: middle;
+    }       
+    #my-basket .table-content-container .column-content .mobile-row-data-container .column-data-all-cost {
+        font-size: 21px;
+        font-weight: bold;
+        margin-left: 18px;
+    }
+        #my-basket .table-content-container .product-title {
+        padding-left: 40px;
+    }
+    #my-basket .table-action-column .coupon-container .coupon-code-input {
+        width: 192px;
+    }
+    #my-basket .actions-container {
+        margin-top: 36px;
+        text-align: center;
+    }
+    #my-basket .actions-container .basket-action-column {
+        margin-top: 29px;
+    }
+    #my-basket .actions-container .total-container .total-value {
+        margin-right: 13px;
+    }
+    #my-basket .basket-action-column .action-button-container .clear-btn {
+        margin-right: 19px;
+        padding: 11px 9px;
+    }
+    #my-basket .basket-action-column .action-button-container .ia-btn {
+        padding: 12px 14px;
+        font-size: 12px;
+    }
+    #my-basket .basket-action-column .action-button-container {
+        text-align: center;
+    }
 }
 
 /* Tablet */
@@ -3545,6 +3607,19 @@ footer .general-container{
         padding-top: 6px;
     }
 
+    /************************** BASKET ***************************/
+    #my-basket .actions-container {
+        margin-top: 17px;
+    }
+    #my-basket .actions-container .table-action-column {
+        padding-left: 23px;
+    }
+    #my-basket .table-action-column .coupon-container .coupon-code-input{
+        width: 202px;
+    }
+    #my-basket .actions-container .basket-action-column {
+        padding-left:0;
+    }
 
  }
 /* (desktops, 992px and up) */
