@@ -2698,7 +2698,26 @@ nav.navigation .third-level-container li{
     color:#79828b;
 }
 
-/********************************* REVIEWS *************************************/
+/********************************* NEWS SINGLE **************************************/
+.ia-news-single{
+    padding: 105px 0 0;
+}
+.ia-news-single .title-container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    float:left;
+    margin: 0;
+}
+.ia-news-single .title-container .news-date {
+    float:right;
+    line-height: 35px;
+    color:#79828b;
+}
+    .ia-news-single .text-container {
+        color:#79828b;        
+    }
+
+/********************************* REVIEWS LIST *************************************/
 .ia-reviews-list.reviews-list  {
 
 }
@@ -2719,6 +2738,9 @@ nav.navigation .third-level-container li{
 }
 .ia-reviews-list.reviews-list .pagination-container {
     display:inline-block;
+}
+.ia-news-single .text-container img{
+    border-radius:10px;
 }
 
 /******************************** FOOTER **************************************/
@@ -3540,6 +3562,24 @@ footer .general-container{
     .ia-news-list .pagination-container {
         text-align: center;
     }
+
+    /*********************** NEWS SINGLE ***************************/
+    .ia-news-single {
+        padding: 65px 15px 0;
+    }
+        .ia-news-single .title-container {
+            text-align:center;
+        }
+    .ia-news-single .title-container h1 {
+        font-size: 18px;
+        float: none; 
+        width: 200px;
+        display: inline-block;
+    }
+    .ia-news-single .title-container .news-date {
+        float: none; 
+        display: block;
+    }
 }
 
 /* Tablet */
@@ -4084,6 +4124,14 @@ footer .general-container{
     }
     .ia-news-list .news-single-container .text-column {
          padding-left: 15px;
+    }
+
+    /*********************** NEWS SINGLE ***************************/
+    .ia-news-single {
+        padding: 65px 15px 0;
+    }
+    .ia-news-single .title-container h1 {
+        width: 420px;
     }
 
  }
