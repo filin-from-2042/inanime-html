@@ -546,6 +546,24 @@ i.ai-icon-bs.ia-link-icon:before {
     border-color: transparent;
 }
 
+/********************************* TAGS LIST *******************************/
+.tags-list {
+    color:rgb(245,173,91);
+}
+.tags-list ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.tags-list li {
+    display:inline-block;
+    margin-right: 5px;
+    letter-spacing: 0px;
+}
+.tags-list li .fa-hashtag {
+    margin-right:1px;
+}
+
 /******************************* HEADER ***********************************/
 header{
     padding-top: 30px;
@@ -2743,6 +2761,83 @@ nav.navigation .third-level-container li{
     border-radius:10px;
 }
 
+/********************************* REVIEWS SINGLE *********************************/
+.ia-reviews-single {
+    padding:107px 0 0;
+}
+.ia-reviews-single .review-info {
+    background-color: #3baeda;
+    width:auto;
+    padding: 10px 20px 10px 20px;
+    color:#fff;
+}
+.ia-reviews-single .review-full-image{
+    width:500px;
+    height:362px;
+    /*max-width:500px;
+    max-height:362px;*/
+    float:left;
+    margin: 0 42px 35px 0;
+}
+.ia-reviews-single .review-info .date.text{
+    margin-right: 14px;
+}
+.ia-reviews-single .review-info .date.text,
+.ia-reviews-single .review-info .comments.text {
+    display:inline-block;
+}
+
+.ia-reviews-single .review-info-container .review-info {
+    display:inline-block;
+}
+    .ia-reviews-single .review-info-container {
+        margin-bottom:15px;
+    }
+.ia-reviews-single .text-container {
+    color:#79828b; 
+}
+.ia-reviews-single h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+}
+.ia-reviews-single .tags-container {
+    margin-bottom:27px;
+}
+.ia-reviews-single #comments.comment-container {
+    border:2px solid #5d3d1d;
+    border-radius:10px;
+    padding: 19px 27px;
+    margin-top: 65px;
+}
+.ia-reviews-single #comments.comment-container .comments-title {
+    text-transform:uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    letter-spacing: 1px;
+}
+.ia-reviews-single #comments .comment-main .nickname-rate-container .nicname {
+    margin-bottom:15px;
+}
+.ia-reviews-single #comments .comment-main {
+    margin-bottom: 31px;
+}
+.ia-reviews-single #comments  .text-btn.blue-btn {
+    padding: 11px 24px;
+    font-size: 14px;
+}
+    .ia-reviews-single #comments .button-container {
+        text-align:center;
+    }
+
+    .ia-reviews-single #comments .comment-date {
+        float:right;
+        font-size: 13px;
+    }
+
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -3580,6 +3675,41 @@ footer .general-container{
         float: none; 
         display: block;
     }
+
+    /****************************** REVIEW SINGLE ********************/
+    .ia-reviews-single .review-full-image {
+        width: 291px;
+        height: 209px;
+        float:none;
+    }
+    .ia-reviews-single {
+        padding: 67px 15px 0;
+    }
+    .ia-reviews-single h1,
+    .ia-reviews-single .review-info-container,
+    .ia-reviews-single .tags-container{
+        text-align: center;
+    }
+    .ia-reviews-single h1 {
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 13px;
+    }
+    .ia-reviews-single .tags-container {
+        margin-bottom: 18px;
+    }
+    .ia-reviews-single #comments.comment-container {
+        padding: 17px 14px;
+    }
+    .ia-reviews-single #comments .comment-main .nickname-rate-container {
+        text-align: left;
+    }
+    .ia-reviews-single #comments .comment-main {
+        padding: 6px 16px;
+    }
+    .ia-reviews-single #comments .comment-date {
+        line-height: 27px;
+    }
 }
 
 /* Tablet */
@@ -4132,6 +4262,18 @@ footer .general-container{
     }
     .ia-news-single .title-container h1 {
         width: 420px;
+    }
+
+    /************************ REVIEW SINGLE ***********************/
+    .ia-reviews-single .review-full-image{
+        width:282px;
+        height:200px;
+        /*max-width:500px;
+        max-height:362px;*/
+        margin: 0 39px 11px 0;
+    }
+    .ia-reviews-single {
+        padding: 72px 0 0;
     }
 
  }
