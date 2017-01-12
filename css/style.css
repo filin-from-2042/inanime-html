@@ -3879,11 +3879,11 @@ footer .general-container{
     .order-drawing-up-complete .general-message {
         font-size: 17px;
     }
+
+    /******************************* CONTACTS-DATA **************************************/
     .contacts-data .mail-container .value {
         margin-top: 7px;
     }
-
-    /******************************* CONTACTS-DATA **************************************/
     .contacts-data .data-column .phone-container {
         margin-top: 30px;
     }
