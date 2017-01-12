@@ -2994,8 +2994,30 @@ nav.navigation .third-level-container li{
     margin-top: 10px;
 }
 
-
-
+/********************************* SEARCH PAGE ********************************/
+.ia-search-page {
+}
+    .ia-search-page .search-panel-row {
+        padding-left:35px;
+    }
+    .ia-search-page .search-control-wrap,
+    .ia-search-page .search-info-wrap{
+        text-align:center;
+    }
+    .ia-search-page .search-control-wrap .search-input,
+    .ia-search-page .align-wrap {
+        display:inline-block;
+    }
+    .ia-search-page .search-control-wrap .search-button {
+        padding: 8px 26px;
+        margin-left: 10px;
+    }
+    .ia-search-page .search-info-wrap {
+        margin-top: 46px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
 /******************************** FOOTER **************************************/
 footer .about .row{
     padding-left: 18px;
@@ -3917,6 +3939,18 @@ footer .general-container{
     .contacts-data .store-address-container .text-wrap {
         width: 71%;
     }
+
+    /****************** SEARCH PAGE ********************/
+    .ia-search-page .search-panel-row {
+         padding-left: 0px; 
+    }
+    .ia-search-page .search-control-wrap .search-input {
+        width:190px;
+    }
+    .ia-search-page .search-info-wrap {
+        margin-top: 32px;
+        font-size: 14px;
+    }
 }
 
 /* Tablet */
@@ -4509,6 +4543,11 @@ footer .general-container{
     }
     .contacts-data .store-address-container .text-wrap span{
         font-size: 14px;
+    }
+
+    /****************** SEARCH PAGE ********************/
+    .ia-search-page .search-info-wrap {
+        margin-top: 35px;
     }
  }
 /* (desktops, 992px and up) */
