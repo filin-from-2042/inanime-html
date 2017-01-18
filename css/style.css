@@ -83,6 +83,21 @@ body{
     padding: 8px 9px;
     border-radius: 7px;
 }
+.ia-btn-group button {
+    padding: 11px;
+    text-align:center;
+    font-size:14px;
+    height:42px;
+}
+.ia-btn-group .btn + .btn {
+    margin-left:0;
+}
+.ia-btn-group button:first-child{
+    border-right: 1px solid rgb(247,187,114);
+}
+.ia-btn-group .in-cart {
+    width:140px;
+}
 .social-link{
     display: inline-block;
     width: 31px;
